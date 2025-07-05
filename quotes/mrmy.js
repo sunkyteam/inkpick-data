@@ -55,7 +55,7 @@ const quotes = [
     source: ""
   },
   {
-    id: 11,
+    id: 10,
     content: "二楼要盖在一楼上",
     author: "孙上轲",
     source: ""
