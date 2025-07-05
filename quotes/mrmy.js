@@ -50,12 +50,6 @@ const quotes = [
   },
   {
     id: 9,
-    content: "生活就像骑自行车，要保持平衡就得不断前进",
-    author: "阿尔伯特·爱因斯坦",
-    source: ""
-  },
-  {
-    id: 10,
     content: "二楼要盖在一楼上",
     author: "孙上轲",
     source: ""
