@@ -55,12 +55,6 @@ const quotes = [
     source: ""
   },
   {
-    id: 10,
-    content: "世上无难事，只怕有心人",
-    author: "王阳明",
-    source: ""
-  },
-  {
     id: 11,
     content: "二楼要盖在一楼上",
     author: "孙上轲",
