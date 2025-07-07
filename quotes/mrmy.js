@@ -47,7 +47,7 @@ const quotes = [
     content: "天行健，君子以自强不息",
     author: "周易",
     source: "《周易》"
-  },
+  }
 ];
 
 export default quotes;
