@@ -48,12 +48,6 @@ const quotes = [
     author: "周易",
     source: "《周易》"
   },
-  {
-    id: 9,
-    content: "二楼要盖在一楼上",
-    author: "孙上轲",
-    source: ""
-  }
 ];
 
 export default quotes;
