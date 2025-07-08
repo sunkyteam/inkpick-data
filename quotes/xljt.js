@@ -512,7 +512,7 @@ const quotes = [
   },
   {
     id: 86,
-    content: "不要等待机会，而要创造机会。",
+    content: "要想自己存在就得让对方存在，树砍光了，斧头也就没有把了。",
     author: "",
     source: ""
   },
@@ -530,7 +530,7 @@ const quotes = [
   },
   {
     id: 89,
-    content: "昨晚多几分钟的准备，今天少几小时的麻烦。",
+    content: "一个胜利者不会放弃，而一个放弃者永远不会胜利。",
     author: "",
     source: ""
   },
