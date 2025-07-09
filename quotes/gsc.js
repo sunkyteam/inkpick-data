@@ -34,7 +34,7 @@ const quotes = [
     id: 6,
     content: "海内存知己，天涯若比邻",
     author: "王勃",
-    source: "送杜少府"
+    source: "送杜少府之任蜀州"
   },
   {
     id: 7,
@@ -64,13 +64,13 @@ const quotes = [
     id: 11,
     content: "独在异乡为异客，每逢佳节倍思亲",
     author: "王维",
-    source: "九月九日"
+    source: "九月九日忆山东兄弟"
   },
   {
     id: 12,
     content: "劝君更尽一杯酒，西出阳关无故人",
     author: "王维",
-    source: "送元二使"
+    source: "送元二使安西"
   },
   {
     id: 13,
@@ -130,7 +130,7 @@ const quotes = [
     id: 22,
     content: "接天莲叶无穷碧，映日荷花别样红",
     author: "杨万里",
-    source: "晓出净慈"
+    source: "晓出净慈寺送林子方"
   },
   {
     id: 23,
@@ -166,7 +166,7 @@ const quotes = [
     id: 28,
     content: "毕竟西湖六月中，风光不与四时同",
     author: "杨万里",
-    source: "晓出净慈"
+    source: "晓出净慈寺送林子方"
   },
   {
     id: 29,
@@ -178,31 +178,31 @@ const quotes = [
     id: 30,
     content: "水光潋滟晴方好，山色空蒙雨亦奇",
     author: "苏轼",
-    source: "饮湖上初"
+    source: "饮湖上初晴后雨"
   },
   {
     id: 31,
     content: "竹外桃花三两枝，春江水暖鸭先知",
     author: "苏轼",
-    source: "惠崇春江"
+    source: "惠崇春江晚景"
   },
   {
     id: 32,
     content: "欲把西湖比西子，淡妆浓抹总相宜",
     author: "苏轼",
-    source: "饮湖上初"
+    source: "饮湖上初晴后雨"
   },
   {
     id: 33,
     content: "忽如一夜春风来，千树万树梨花开",
     author: "岑参",
-    source: "白雪歌送"
+    source: "白雪歌送武判官归京"
   },
   {
     id: 34,
     content: "孤帆远影碧空尽，唯见长江天际流",
     author: "李白",
-    source: "黄鹤楼送"
+    source: "黄鹤楼送孟浩然之广陵"
   },
   {
     id: 35,
@@ -214,37 +214,37 @@ const quotes = [
     id: 36,
     content: "安能摧眉折腰事权贵，使我不得开心颜",
     author: "李白",
-    source: "梦游天姥"
+    source: "梦游天姥吟留别"
   },
   {
     id: 37,
     content: "飞流直下三千尺，疑是银河落九天",
     author: "李白",
-    source: "望庐山瀑"
+    source: "望庐山瀑布"
   },
   {
     id: 38,
     content: "两岸猿声啼不住，轻舟已过万重山",
     author: "李白",
-    source: "早发白帝"
+    source: "早发白帝城"
   },
   {
     id: 39,
     content: "云想衣裳花想容，春风拂槛露华浓",
     author: "李白",
-    source: "清平调·"
+    source: "清平调·其一"
   },
   {
     id: 40,
     content: "仰天大笑出门去，我辈岂是蓬蒿人",
     author: "李白",
-    source: "南陵别儿"
+    source: "南陵别儿童入京"
   },
   {
     id: 41,
     content: "露从今夜白，月是故乡明",
     author: "杜甫",
-    source: "月夜忆舍"
+    source: "月夜忆舍弟"
   },
   {
     id: 42,
@@ -272,375 +272,303 @@ const quotes = [
   },
   {
     id: 46,
-    content: "两个黄鹂鸣翠柳，一行白鹭上青天",
-    author: "杜甫",
-    source: "绝句"
-  },
-  {
-    id: 47,
     content: "窗含西岭千秋雪，门泊东吴万里船",
     author: "杜甫",
     source: "绝句"
   },
   {
-    id: 48,
-    content: "商女不知亡国恨，隔江犹唱后庭花",
-    author: "杜牧",
-    source: "泊秦淮"
-  },
-  {
-    id: 49,
+    id: 47,
     content: "东风不与周郎便，铜雀春深锁二乔",
     author: "杜牧",
     source: "赤壁"
   },
   {
-    id: 50,
-    content: "停车坐爱枫林晚，霜叶红于二月花",
-    author: "杜牧",
-    source: "山行"
-  },
-  {
-    id: 51,
+    id: 48,
     content: "清明时节雨纷纷，路上行人欲断魂",
     author: "杜牧",
     source: "清明"
   },
   {
-    id: 52,
+    id: 49,
     content: "银烛秋光冷画屏，轻罗小扇扑流萤",
     author: "杜牧",
     source: "秋夕"
   },
   {
-    id: 53,
+    id: 50,
     content: "相见时难别亦难，东风无力百花残",
     author: "李商隐",
     source: "无题"
   },
   {
-    id: 54,
+    id: 51,
     content: "春蚕到死丝方尽，蜡炬成灰泪始干",
     author: "李商隐",
     source: "无题"
   },
   {
-    id: 55,
+    id: 52,
     content: "晓镜但愁云鬓改，夜吟应觉月光寒",
     author: "李商隐",
     source: "无题"
   },
   {
-    id: 56,
+    id: 53,
     content: "庄生晓梦迷蝴蝶，望帝春心托杜鹃",
     author: "李商隐",
     source: "锦瑟"
   },
   {
-    id: 57,
+    id: 54,
     content: "此情可待成追忆？只是当时已惘然",
     author: "李商隐",
     source: "锦瑟"
   },
   {
-    id: 58,
+    id: 55,
     content: "君问归期未有期，巴山夜雨涨秋池",
     author: "李商隐",
     source: "夜雨寄北"
   },
   {
-    id: 59,
+    id: 56,
     content: "何当共剪西窗烛，却话巴山夜雨时",
     author: "李商隐",
     source: "夜雨寄北"
   },
   {
-    id: 60,
-    content: "相见时难别亦难，东风无力百花残",
-    author: "李商隐",
-    source: "无题"
-  },
-  {
-    id: 61,
+    id: 57,
     content: "君若扬路尘，妾若浊水泥",
     author: "曹植",
     source: "明月上高楼"
   },
   {
-    id: 62,
+    id: 58,
     content: "愿为西南风，长逝入君怀",
     author: "曹植",
     source: "七哀诗"
   },
   {
-    id: 63,
+    id: 59,
     content: "捐躯赴国难，视死忽如归",
     author: "曹植",
     source: "白马篇"
   },
   {
-    id: 64,
+    id: 60,
     content: "清水出芙蓉，天然去雕饰",
     author: "李白",
-    source: "经乱离后"
+    source: "经乱离后天恩流夜郎忆旧游书怀赠江夏韦太守良宰"
+  },
+  {
+    id: 61,
+    content: "云青青兮欲雨，水澹澹兮生烟",
+    author: "李白",
+    source: "梦游天姥吟留别"
+  },
+  {
+    id: 62,
+    content: "举杯邀明月，对影成三人",
+    author: "李白",
+    source: "月下独酌四首·其一"
+  },
+  {
+    id: 63,
+    content: "凤凰台上凤凰游，凤去台空江自流",
+    author: "李白",
+    source: "登金陵凤凰台"
+  },
+  {
+    id: 64,
+    content: "总为浮云能蔽日，长安不见使人愁",
+    author: "李白",
+    source: "登金陵凤凰台"
   },
   {
     id: 65,
-    content: "云青青兮欲雨，水澹澹兮生烟",
+    content: "长风破浪会有时，直挂云帆济沧海",
     author: "李白",
-    source: "梦游天姥"
+    source: "行路难·其一"
   },
   {
     id: 66,
-    content: "举杯邀明月，对影成三人",
-    author: "李白",
-    source: "月下独酌"
-  },
-  {
-    id: 67,
-    content: "凤凰台上凤凰游，凤去台空江自流",
-    author: "李白",
-    source: "登金陵凤"
-  },
-  {
-    id: 68,
-    content: "总为浮云能蔽日，长安不见使人愁",
-    author: "李白",
-    source: "登金陵凤"
-  },
-  {
-    id: 69,
-    content: "长风破浪会有时，直挂云帆济沧海",
-    author: "李白",
-    source: "行路难·"
-  },
-  {
-    id: 70,
-    content: "天生我材必有用，千金散尽还复来",
-    author: "李白",
-    source: "将进酒"
-  },
-  {
-    id: 71,
     content: "两岸青山相对出，孤帆一片日边来",
     author: "李白",
     source: "望天门山"
   },
   {
-    id: 72,
-    content: "云想衣裳花想容，春风拂槛露华浓",
-    author: "李白",
-    source: "清平调·"
-  },
-  {
-    id: 73,
+    id: 67,
     content: "若非群玉山头见，会向瑶台月下逢",
     author: "李白",
-    source: "清平调·"
+    source: "清平调·其二"
   },
   {
-    id: 74,
-    content: "安能摧眉折腰事权贵，使我不得开心颜",
-    author: "李白",
-    source: "梦游天姥"
-  },
-  {
-    id: 75,
+    id: 68,
     content: "但使主人能醉客，不知何处是他乡",
     author: "李白",
     source: "客中行"
   },
   {
-    id: 76,
-    content: "仰天大笑出门去，我辈岂是蓬蒿人",
-    author: "李白",
-    source: "南陵别儿"
-  },
-  {
-    id: 77,
+    id: 69,
     content: "抽刀断水水更流，举杯消愁愁更愁",
     author: "李白",
-    source: "宣州谢朓"
+    source: "宣州谢朓楼饯别校书叔云"
   },
   {
-    id: 78,
+    id: 70,
     content: "蓬莱文章建安骨，中间小谢又清发",
     author: "李白",
-    source: "宣州谢朓"
+    source: "宣州谢朓楼饯别校书叔云"
   },
   {
-    id: 79,
+    id: 71,
     content: "俱怀逸兴壮思飞，欲上青天揽明月",
     author: "李白",
-    source: "宣州谢朓"
+    source: "宣州谢朓楼饯别校书叔云"
   },
   {
-    id: 80,
+    id: 72,
     content: "浮云游子意，落日故人情",
     author: "李白",
     source: "送友人"
   },
   {
-    id: 81,
+    id: 73,
     content: "挥手自兹去，萧萧班马鸣",
     author: "李白",
     source: "送友人"
   },
   {
-    id: 82,
+    id: 74,
     content: "山随平野尽，江入大荒流",
     author: "李白",
-    source: "渡荆门送"
+    source: "渡荆门送别"
+  },
+  {
+    id: 75,
+    content: "月下飞天镜，云生结海楼",
+    author: "李白",
+    source: "渡荆门送别"
+  },
+  {
+    id: 76,
+    content: "仍怜故乡水，万里送行舟",
+    author: "李白",
+    source: "渡荆门送别"
+  },
+  {
+    id: 77,
+    content: "早服还丹无世情，琴心三叠道初成",
+    author: "李白",
+    source: "庐山谣寄卢侍御虚舟"
+  },
+  {
+    id: 78,
+    content: "为君谈笑静胡沙，系虏请缨向天涯",
+    author: "李白",
+    source: "永王东巡歌·其二"
+  },
+  {
+    id: 79,
+    content: "吴宫花草埋幽径，晋代衣冠成古丘",
+    author: "李白",
+    source: "登金陵凤凰台"
+  },
+  {
+    id: 80,
+    content: "三山半落青天外，二水中分白鹭洲",
+    author: "李白",
+    source: "登金陵凤凰台"
+  },
+  {
+    id: 81,
+    content: "金樽清酒斗十千，玉盘珍羞直万钱",
+    author: "李白",
+    source: "行路难·其一"
+  },
+  {
+    id: 82,
+    content: "停杯投箸不能食，拔剑四顾心茫然",
+    author: "李白",
+    source: "行路难·其一"
   },
   {
     id: 83,
-    content: "月下飞天镜，云生结海楼",
+    content: "欲渡黄河冰塞川，将登太行雪满山",
     author: "李白",
-    source: "渡荆门送"
+    source: "行路难·其一"
   },
   {
     id: 84,
-    content: "仍怜故乡水，万里送行舟",
+    content: "闲来垂钓碧溪上，忽复乘舟梦日边",
     author: "李白",
-    source: "渡荆门送"
+    source: "行路难·其一"
   },
   {
     id: 85,
-    content: "早服还丹无世情，琴心三叠道初成",
+    content: "行路难！行路难！多歧路，今安在？",
     author: "李白",
-    source: "庐山谣寄"
+    source: "行路难·其一"
   },
   {
     id: 86,
-    content: "飞流直下三千尺，疑是银河落九天",
+    content: "大道如青天，我独不得出",
     author: "李白",
-    source: "望庐山瀑"
+    source: "行路难·其二"
   },
   {
     id: 87,
-    content: "为君谈笑静胡沙，系虏请缨向天涯",
+    content: "羞逐长安社中儿，赤鸡白雉赌梨栗",
     author: "李白",
-    source: "永王东巡"
+    source: "行路难·其二"
   },
   {
     id: 88,
-    content: "吴宫花草埋幽径，晋代衣冠成古丘",
+    content: "弹剑作歌奏苦声，曳裾王门不称情",
     author: "李白",
-    source: "登金陵凤"
+    source: "行路难·其二"
   },
   {
     id: 89,
-    content: "三山半落青天外，二水中分白鹭洲",
+    content: "淮阴市井笑韩信，汉朝公卿忌贾生",
     author: "李白",
-    source: "登金陵凤"
+    source: "行路难·其二"
   },
   {
     id: 90,
-    content: "凤凰台上凤凰游，凤去台空江自流",
+    content: "君不见昔时燕家重郭隗，拥彗折节无嫌猜",
     author: "李白",
-    source: "登金陵凤"
+    source: "行路难·其二"
   },
   {
     id: 91,
-    content: "总为浮云能蔽日，长安不见使人愁",
+    content: "剧辛乐毅感恩分，输肝剖胆效英才",
     author: "李白",
-    source: "登金陵凤"
+    source: "行路难·其二"
   },
   {
     id: 92,
-    content: "长风破浪会有时，直挂云帆济沧海",
+    content: "昭王白骨萦蔓草，谁人更扫黄金台？",
     author: "李白",
-    source: "行路难·"
+    source: "行路难·其二"
   },
   {
     id: 93,
-    content: "金樽清酒斗十千，玉盘珍羞直万钱",
+    content: "行路难，归去来！",
     author: "李白",
-    source: "行路难·"
+    source: "行路难·其二"
   },
   {
     id: 94,
-    content: "停杯投箸不能食，拔剑四顾心茫然",
+    content: "有耳莫洗颍川水，有口莫食首阳蕨",
     author: "李白",
-    source: "行路难·"
+    source: "行路难·其三"
   },
   {
     id: 95,
-    content: "欲渡黄河冰塞川，将登太行雪满山",
-    author: "李白",
-    source: "行路难·"
-  },
-  {
-    id: 96,
-    content: "闲来垂钓碧溪上，忽复乘舟梦日边",
-    author: "李白",
-    source: "行路难·"
-  },
-  {
-    id: 97,
-    content: "行路难！行路难！多歧路，今安在？",
-    author: "李白",
-    source: "行路难·"
-  },
-  {
-    id: 98,
-    content: "大道如青天，我独不得出",
-    author: "李白",
-    source: "行路难·"
-  },
-  {
-    id: 99,
-    content: "羞逐长安社中儿，赤鸡白雉赌梨栗",
-    author: "李白",
-    source: "行路难·"
-  },
-  {
-    id: 100,
-    content: "弹剑作歌奏苦声，曳裾王门不称情",
-    author: "李白",
-    source: "行路难·"
-  },
-  {
-    id: 101,
-    content: "淮阴市井笑韩信，汉朝公卿忌贾生",
-    author: "李白",
-    source: "行路难·"
-  },
-  {
-    id: 102,
-    content: "君不见昔时燕家重郭隗，拥彗折节无嫌猜",
-    author: "李白",
-    source: "行路难·"
-  },
-  {
-    id: 103,
-    content: "剧辛乐毅感恩分，输肝剖胆效英才",
-    author: "李白",
-    source: "行路难·"
-  },
-  {
-    id: 104,
-    content: "昭王白骨萦蔓草，谁人更扫黄金台？",
-    author: "李白",
-    source: "行路难·"
-  },
-  {
-    id: 105,
-    content: "行路难，归去来！",
-    author: "李白",
-    source: "行路难·"
-  },
-  {
-    id: 106,
-    content: "有耳莫洗颍川水，有口莫食首阳蕨",
-    author: "李白",
-    source: "行路难·"
-  },
-  {
-    id: 107,
     content: "含光混世贵无名，何用孤高比云月？",
     author: "李白",
-    source: "行路难·"
+    source: "行路难·其三"
   }
 ];
 
