@@ -1,0 +1,3 @@
+/quotes/*.js
+  Access-Control-Allow-Origin: *
+  Content-Type: application/javascript; charset=utf-8
