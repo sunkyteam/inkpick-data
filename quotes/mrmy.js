@@ -189,13 +189,13 @@ const quotes = [
   {
     id: 32,
     content: "只有经历过地狱磨砺，才有创造天堂的力量",
-    author: "泰戈尔",
+    author: "尼采", // 修正：原归属泰戈尔错误
     source: ""
   },
   {
     id: 33,
     content: "真正的平静，不是避开车马喧嚣，而是在心中修篱种菊",
-    author: "林徽因",
+    author: "白落梅", // 修正：原归属林徽因错误
     source: ""
   },
   {
@@ -291,13 +291,13 @@ const quotes = [
   {
     id: 49,
     content: "哪里有阴影，哪里就有光",
-    author: "雨果",
+    author: "纪伯伦", // 修正：原归属雨果错误
     source: ""
   },
   {
     id: 50,
     content: "光明与黑暗交织厮杀，这便是我们所在的世界",
-    author: "雨果",
+    author: "维克多·雨果",
     source: ""
   },
   {
@@ -357,7 +357,7 @@ const quotes = [
   {
     id: 60,
     content: "预测未来的最好方式是创造它",
-    author: "亚伯拉罕·林肯",
+    author: "艾伦·凯", // 修正：原归属林肯错误
     source: ""
   },
   {
@@ -483,7 +483,7 @@ const quotes = [
   {
     id: 81,
     content: "生命中最沉重的负担不是工作，而是无聊",
-    author: "罗曼·罗兰",
+    author: "米兰·昆德拉", // 修正：原归属罗曼·罗兰错误
     source: ""
   },
   {
@@ -602,5 +602,5 @@ const quotes = [
   }
 ];
 
-export default quotes;
+export default quotes;  
 
