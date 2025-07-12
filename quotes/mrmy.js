@@ -50,7 +50,7 @@ const quotes = [
   },
   {
     id: 9,
-    content: "世界上最宽阔的是海洋，比海洋更宽阔的是天空",
+    content: "世界上最宽阔的是海洋，比海洋更宽阔的是天空，比天空更宽阔的是人的胸怀",
     author: "雨果",
     source: ""
   },
@@ -98,8 +98,8 @@ const quotes = [
   },
   {
     id: 17,
-    content: "成功功与过的试金石",
-    author: "拜伦",
+    content: "失败乃成功之母",
+    author: "温德尔·菲利普斯",
     source: ""
   },
   {
@@ -189,13 +189,13 @@ const quotes = [
   {
     id: 32,
     content: "只有经历过地狱磨砺，才有创造天堂的力量",
-    author: "尼采", 
+    author: "尼采",
     source: ""
   },
   {
     id: 33,
     content: "真正的平静，不是避开车马喧嚣，而是在心中修篱种菊",
-    author: "白落梅", 
+    author: "白落梅",
     source: ""
   },
   {
@@ -278,329 +278,323 @@ const quotes = [
   },
   {
     id: 47,
-    content: "世界上最宽阔的是海洋，比海洋更宽阔的是天空",
-    author: "雨果",
-    source: ""
-  },
-  {
-    id: 48,
     content: "人生下来不是为了拖着锁链，而是为了展开双翼",
     author: "雨果",
     source: ""
   },
   {
-    id: 49,
+    id: 48,
     content: "哪里有阴影，哪里就有光",
     author: "纪伯伦",
     source: ""
   },
   {
-    id: 50,
+    id: 49,
     content: "光明与黑暗交织厮杀，这便是我们所在的世界",
     author: "维克多·雨果",
     source: ""
   },
   {
-    id: 51,
+    id: 50,
     content: "当真理还在穿鞋时，谎言已走遍半个世界",
     author: "马克·吐温",
     source: ""
   },
   {
-    id: 52,
+    id: 51,
     content: "在时间的大钟上，只有两个字——现在",
     author: "莎士比亚",
     source: ""
   },
   {
-    id: 53,
+    id: 52,
     content: "给我一个支点，我就能撬起整个地球",
     author: "阿基米德",
     source: ""
   },
   {
-    id: 54,
+    id: 53,
     content: "当你为错过太阳而哭泣，你也将错过群星",
     author: "泰戈尔",
     source: ""
   },
   {
-    id: 55,
+    id: 54,
     content: "战争不决定谁对了，只决定谁留下了",
     author: "罗素",
     source: ""
   },
   {
-    id: 56,
+    id: 55,
     content: "人生而自由，却无往不在枷锁之中",
     author: "卢梭",
     source: ""
   },
   {
-    id: 57,
+    id: 56,
     content: "存在即合理",
     author: "黑格尔",
     source: ""
   },
   {
-    id: 58,
+    id: 57,
     content: "我思故我在",
     author: "笛卡尔",
     source: ""
   },
   {
-    id: 59,
+    id: 58,
     content: "最大的风险是不冒任何风险",
     author: "马克·扎克伯格",
     source: ""
   },
   {
-    id: 60,
+    id: 59,
     content: "预测未来的最好方式是创造它",
-    author: "艾伦·凯", 
+    author: "艾伦·凯",
     source: ""
   },
   {
-    id: 61,
+    id: 60,
     content: "不要问国家能为你做什么，问你能为国家做什么",
     author: "肯尼迪",
     source: ""
   },
   {
-    id: 62,
+    id: 61,
     content: "唯一不变的是变化本身",
     author: "赫拉克利特",
     source: ""
   },
   {
-    id: 63,
+    id: 62,
     content: "生命中只有两种悲剧：一种是得不到想要的，另一种是得到了",
     author: "王尔德",
     source: ""
   },
   {
-    id: 64,
+    id: 63,
     content: "人生如同故事，重要的不是长度，而是精彩程度",
     author: "塞涅卡",
     source: ""
   },
   {
-    id: 65,
+    id: 64,
     content: "教育是把火炬点燃，而不是把容器灌满",
-    author: "苏格拉底",
+    author: "威廉·巴特勒·叶芝",
     source: ""
   },
   {
-    id: 66,
+    id: 65,
     content: "智慧不仅仅存在于知识中，更存在于运用知识的能力中",
     author: "亚里士多德",
     source: ""
   },
   {
-    id: 67,
-    content: "革命不是请客吃饭，是做文章",
+    id: 66,
+    content: "我们不但善于破坏一个旧世界，我们还将善于建设一个新世界",
     author: "毛泽东",
     source: ""
   },
   {
-    id: 68,
+    id: 67,
     content: "书籍是人类进步的阶梯",
     author: "高尔基",
     source: ""
   },
   {
-    id: 69,
+    id: 68,
     content: "谎言的代价不仅是它被当真，而是我们再也无法辨别真相",
     author: "乔治·奥威尔",
     source: ""
   },
   {
-    id: 70,
+    id: 69,
     content: "战争是政治的延续",
     author: "克劳塞维茨",
     source: ""
   },
   {
-    id: 71,
+    id: 70,
     content: "活着就是要改变世界，否则活着还有什么意义",
     author: "乔布斯",
     source: ""
   },
   {
-    id: 72,
+    id: 71,
     content: "自由不是无代价的",
     author: "托马斯·潘恩",
     source: ""
   },
   {
-    id: 73,
+    id: 72,
     content: "世界以痛吻我，要我报之以歌",
     author: "泰戈尔",
     source: ""
   },
   {
-    id: 74,
+    id: 73,
     content: "当你说不可能时，只是在表达自己的局限",
     author: "爱因斯坦",
     source: ""
   },
   {
-    id: 75,
+    id: 74,
     content: "教育的根是苦的，但其果实是甜的",
     author: "亚里士多德",
     source: ""
   },
   {
-    id: 76,
+    id: 75,
     content: "我们关心的不是你是否失败，而是你是否甘心失败",
     author: "林肯",
     source: ""
   },
   {
-    id: 77,
+    id: 76,
     content: "树的方向由风决定，人的方向由自己决定",
     author: "卡耐基",
     source: ""
   },
   {
-    id: 78,
+    id: 77,
     content: "最高的道德是爱国心",
     author: "拿破仑",
     source: ""
   },
   {
-    id: 79,
+    id: 78,
     content: "时间是最好的作者，它总会写出完美结局",
     author: "卓别林",
     source: ""
   },
   {
-    id: 80,
+    id: 79,
     content: "科学没有国界，科学家却有祖国",
     author: "巴斯德",
     source: ""
   },
   {
-    id: 81,
+    id: 80,
     content: "生命中最沉重的负担不是工作，而是无聊",
-    author: "米兰·昆德拉", 
+    author: "米兰·昆德拉",
     source: ""
   },
   {
-    id: 82,
+    id: 81,
     content: "艺术是让我们认识真理的谎言",
     author: "毕加索",
     source: ""
   },
   {
-    id: 83,
+    id: 82,
     content: "管理就是预测和计划，组织、指挥、协调以及控制",
     author: "亨利·法约尔",
     source: ""
   },
   {
-    id: 84,
+    id: 83,
     content: "改变世界的不是武器，而是思想",
     author: "维克多·雨果",
     source: ""
   },
   {
-    id: 85,
+    id: 84,
     content: "真正的发现之旅不在于寻找新风景，而在于拥有新眼光",
     author: "普鲁斯特",
     source: ""
   },
   {
-    id: 86,
+    id: 85,
     content: "最有力量的时刻，是坚持到最后一分钟",
     author: "丘吉尔",
     source: ""
   },
   {
-    id: 87,
+    id: 86,
     content: "创新是区别领导者和追随者的唯一标准",
     author: "乔布斯",
     source: ""
   },
   {
-    id: 88,
+    id: 87,
     content: "历史从不重复，但它会押韵",
     author: "马克·吐温",
     source: ""
   },
   {
-    id: 89,
-    content: "教育的目的是用开放的头脑替代空虚的头脑",
-    author: "福布斯",
+    id: 88,
+    content: "人必须珍藏某种信念，必须握住某种梦想和希望，必须有彩虹，必须有歌可唱，必须有高贵的事物可以投身",
+    author: "约翰·杜威",
     source: ""
   },
   {
-    id: 90,
+    id: 89,
     content: "衡量一个人的标准，是看他如何面对逆境",
     author: "柏拉图",
     source: ""
   },
   {
-    id: 91,
+    id: 90,
     content: "最强大的力量是温柔",
     author: "老子",
     source: ""
   },
   {
-    id: 92,
+    id: 91,
     content: "万物皆有裂痕，那是光照进来的地方",
     author: "莱昂纳德·科恩",
     source: ""
   },
   {
-    id: 93,
+    id: 92,
     content: "政治是可能性的艺术",
     author: "俾斯麦",
     source: ""
   },
   {
-    id: 94,
+    id: 93,
     content: "没有伟大的愿望，就没有伟大的天才",
     author: "巴尔扎克",
     source: ""
   },
   {
-    id: 95,
+    id: 94,
     content: "摄影是凝固的时间，诗歌是凝固的情感",
     author: "苏珊·桑塔格",
     source: ""
   },
   {
-    id: 96,
+    id: 95,
     content: "战争太重要了，不能交给将军们",
     author: "克列孟梭",
     source: ""
   },
   {
-    id: 97,
+    id: 96,
     content: "法律沉默时，暴力即发声",
     author: "西塞罗",
     source: ""
   },
   {
-    id: 98,
+    id: 97,
     content: "音乐是表达那些无以言表之物的艺术",
     author: "维克多·雨果",
     source: ""
   },
   {
-    id: 99,
+    id: 98,
     content: "我们需要的不是生存，而是生活",
     author: "亚里士多德",
     source: ""
   },
   {
-    id: 100,
+    id: 99,
     content: "革命尚未成功，同志仍须努力",
     author: "孙中山",
     source: ""
   }
 ];
 
-export default quotes;  
+export default quotes;
 
