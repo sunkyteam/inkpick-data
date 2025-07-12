@@ -593,6 +593,7 @@ const quotes = [
     content: "革命尚未成功，同志仍须努力",
     author: "孙中山",
     source: ""
-  }
+   }
+];
 
 export default quotes;
