@@ -1,365 +1,205 @@
 // 每日金句数据
 const quotes = [
-  {
-    id: 1,
-    content: "人类只有一个地球，人类也只有一个共同的未来。",
-    author: "",
-    source: "人民日报"
-  },
-  {
-    id: 2,
-    content: "“键对键”不能代替“面对面”。",
-    author: "",
-    source: "人民日报"
-  },
-  {
-    id: 3,
-    content: "命是自己的，运却和整个国家相关联。",
-    author: "",
-    source: "人民日报"
-  },
-  {
-    id: 4,
-    content: "“正步”人生，从未“稍息”。",
-    author: "",
-    source: "人民日报"
-  },
-  {
-    id: 5,
-    content: "星光不问赶路人，历史属于奋斗者。",
-    author: "",
-    source: "人民日报"
-  },
-  {
-    id: 6,
-    content: "一寸山河一寸血，一抔热土一抔魂。",
-    author: "",
-    source: "人民日报"
-  },
-  {
-    id: 7,
-    content: "乘风好去，长空万里，直下看山河。",
-    author: "",
-    source: "人民日报"
-  },
-  {
-    id: 8,
-    content: "真相不是一块橡皮泥，可以随意揉捏。",
-    author: "",
-    source: "人民日报"
-  },
-  {
-    id: 9,
-    content: "朝着阳光生长，黑夜就不再漫长。",
-    author: "",
-    source: "人民日报"
-  },
-  {
-    id: 10,
-    content: "手里拿锤子的人，看什么都像钉子。",
-    author: "",
-    source: "人民日报"
-  },
-  {
-    id: 11,
-    content: "船的力量在帆上，人的力量在心上。",
-    author: "",
-    source: "人民日报"
-  },
-  {
-    id: 12,
-    content: "“富脑袋”和“富口袋”一样重要。",
-    author: "",
-    source: "人民日报"
-  },
-  {
-    id: 13,
-    content: "一位英雄就是一个标杆，一群英雄就是一片高原。",
-    author: "",
-    source: "人民日报"
-  },
-  {
-    id: 14,
-    content: "肩并肩坐在一起，是人类最美的姿态；",
-    author: "",
-    source: "人民日报"
-  },
-  {
-    id: 15,
-    content: "心，永远都会是身体里最强壮的部位。",
-    author: "",
-    source: "人民日报"
-  },
-  {
-    id: 16,
-    content: "全村的龙已经把最硬的鳞给你，哪怕自己伤痕累累。",
-    author: "",
-    source: "人民日报"
-  },
-  {
-    id: 17,
-    content: "拼手速的时代，不妨让子弹多飞一会儿。",
-    author: "",
-    source: "人民日报"
-  },
-  {
-    id: 18,
-    content: "衣白褂，破楼兰，赤子切记平安还。",
-    author: "",
-    source: "人民日报"
-  },
-  {
-    id: 19,
-    content: "守正且创新，身正且行直，怀珠且抱玉。",
-    author: "",
-    source: "人民日报"
-  },
-  {
-    id: 20,
-    content: "青山无言，永怀碧血；日月行天，以鉴丹心。",
-    author: "",
-    source: "人民日报"
-  },
-  {
-    id: 21,
-    content: "已识乾坤大，犹怜草木青。",
-    author: "",
-    source: "人民日报"
-  },
-  {
-    id: 22,
-    content: "只看得见数字的加减乘除，却忽视了生活的五颜六色。",
-    author: "",
-    source: "人民日报"
-  },
-  {
-    id: 23,
-    content: "干惊天动地事，做隐姓埋名人。",
-    author: "",
-    source: "人民日报"
-  },
-  {
-    id: 24,
-    content: "没有任何一朵花，一开始便是花。",
-    author: "",
-    source: "人民日报"
-  },
-  {
-    id: 25,
-    content: "爱国是最大的公约数。",
-    author: "",
-    source: "人民日报"
-  },
-  {
-    id: 26,
-    content: "树立“高线”，划清“红线”，兜牢“底线”。",
-    author: "",
-    source: "人民日报"
-  },
-  {
-    id: 27,
-    content: "个人的努力是加法，一个团队的努力是乘法。",
-    author: "",
-    source: "人民日报"
-  },
-  {
-    id: 28,
-    content: "与君远相知，不道云海深。",
-    author: "",
-    source: "人民日报"
-  },
-  {
-    id: 29,
-    content: "昨天的太阳，晒不干今天的衣服。",
-    author: "",
-    source: "人民日报"
-  },
-  {
-    id: 30,
-    content: "不忘本来，吸收外来，面向未来。",
-    author: "",
-    source: "人民日报"
-  },
-  {
-    id: 31,
-    content: "在“乡村时空”中增添一层“文化时空”。",
-    author: "",
-    source: "人民日报"
-  },
-  {
-    id: 32,
-    content: "你的高密度阅读能力在渐渐失去。",
-    author: "",
-    source: "人民日报"
-  },
-  {
-    id: 33,
-    content: "拉直这些问号。",
-    author: "",
-    source: "人民日报"
-  },
-  {
-    id: 34,
-    content: "将奖牌的成色换成了金色。",
-    author: "",
-    source: "人民日报"
-  },
-  {
-    id: 35,
-    content: "学习是为了让家乡摆脱贫困，而不是摆脱我们贫困的家乡。",
-    author: "",
-    source: "人民日报"
-  },
-  {
-    id: 36,
-    content: "最大的“甲方”当是对美好生活的向往。",
-    author: "",
-    source: "人民日报"
-  },
-  {
-    id: 37,
-    content: "剑已配妥，学校也是江湖；酒尚余温，人生没有退路。",
-    author: "",
-    source: "人民日报"
-  },
-  {
-    id: 38,
-    content: "面对一个“舆论广场”，需要打造一个“舆论主场”。",
-    author: "",
-    source: "人民日报"
-  },
-  {
-    id: 39,
-    content: "西山苍苍，东海茫茫。不惧风雨，心系远方。",
-    author: "",
-    source: "人民日报"
-  },
-  {
-    id: 40,
-    content: "人生万事须自为，跬步江山即寥廓。",
-    author: "",
-    source: "人民日报"
-  },
-  {
-    id: 41,
-    content: "在“躺平”和“支棱”之间做“仰卧起坐”。",
-    author: "",
-    source: "人民日报"
-  },
-  {
-    id: 42,
-    content: "不论树的影子有多长，根永远扎在土里。",
-    author: "",
-    source: "人民日报"
-  },
-  {
-    id: 43,
-    content: "现代人的原子化生活。",
-    author: "",
-    source: "人民日报"
-  },
-  {
-    id: 44,
-    content: "越来越多的“读者”开始以“听众”“观众”的角色来“读书”。",
-    author: "",
-    source: "人民日报"
-  },
-  {
-    id: 45,
-    content: "在一撇一捺、一点一滴的坚持中。",
-    author: "",
-    source: "人民日报"
-  },
-  {
-    id: 46,
-    content: "吸睛不能辣眼睛，玩梗不能恶趣味。",
-    author: "",
-    source: "人民日报"
-  },
-  {
-    id: 47,
-    content: "当伸出手指指责别人的时候，还有三根手指正指向自己。",
-    author: "",
-    source: "人民日报"
-  },
-  {
-    id: 48,
-    content: "激发起和强队“掰手腕”的斗志。",
-    author: "",
-    source: "人民日报"
-  },
-  {
-    id: 49,
-    content: "人之寿夭在元气，国之长短在风俗。",
-    author: "",
-    source: "人民日报"
-  },
-  {
-    id: 50,
-    content: "聚拢来是烟火，摊开来是人间。",
-    author: "",
-    source: "人民日报"
-  },
-  {
-    id: 51,
-    content: "人到半山不停步，船到中流当奋楫。",
-    author: "",
-    source: "人民日报"
-  },
-  {
-    id: 52,
-    content: "樱花绽放之前，就要抱着凋零的决心。",
-    author: "",
-    source: "人民日报"
-  },
-  {
-    id: 53,
-    content: "你是从诗三百篇中涉水而来，到我身边躺下已是楚辞苍茫。",
-    author: "",
-    source: "人民日报"
-  },
-  {
-    id: 54,
-    content: "生活最佳状态是冷冷清清地风风火火。",
-    author: "",
-    source: "人民日报"
-  },
-  {
-    id: 55,
-    content: "每个人带着一生的历史，半个月的哀乐，在街上走。",
-    author: "",
-    source: "人民日报"
-  },
-  {
-    id: 56,
-    content: "科学与艺术在山脚分手，在山顶重逢。",
-    author: "",
-    source: "人民日报"
-  },
-  {
-    id: 57,
-    content: "当我在尘埃里难以自拔，你们为我的骨头注入江河。",
-    author: "",
-    source: "人民日报"
-  },
-  {
-    id: 58,
-    content: "“地表短期最大规模人口迁徙”，折射中国人才有的情怀。",
-    author: "",
-    source: "人民日报"
-  },
-  {
-    id: 59,
-    content: "不负期待，活出自己的主场。",
-    author: "",
-    source: "人民日报"
-  },
-  {
-    id: 60,
-    content: "新的世界加速拼图，不会友情提示。",
-    author: "",
-    source: "人民日报"
-  }
+  { id: 1, content: "每次归程，都是为了更好出发；每次停歇，都是为了积攒力量。", author: "", source: "人民日报" },
+  { id: 2, content: "生活的真谛，就在日常一点一滴的奋斗里。", author: "", source: "人民日报" },
+  { id: 3, content: "一切伟大成就，都是接续奋斗的结果。", author: "", source: "人民日报" },
+  { id: 4, content: "以梦为马，探索未来；以奋斗为笔，书写抱负。", author: "", source: "人民日报" },
+  { id: 5, content: "“日月不肯迟”，新时代里，人人都能追梦、筑梦。", author: "", source: "人民日报" },
+  { id: 6, content: "奋斗是梦想的翅膀，行动是成功的阶梯。", author: "", source: "人民日报" },
+  { id: 7, content: "不驰于空想，不骛于虚声，方得梦想之花。", author: "", source: "人民日报" },
+  { id: 8, content: "梦想在前，路在脚下，唯有奋斗能抵达。", author: "", source: "人民日报" },
+  { id: 9, content: "把梦想藏于心，将奋斗付于行，终会开花结果。", author: "", source: "人民日报" },
+  { id: 10, content: "每个追梦者的脚步，都在点亮时代的星光。", author: "", source: "人民日报" },
+  { id: 11, content: "奋斗者的汗水，是浇灌梦想最珍贵的养分。", author: "", source: "人民日报" },
+  { id: 12, content: "伟大事业，始于梦想，成于实干与坚持。", author: "", source: "人民日报" },
+  { id: 13, content: "以奋斗之姿，赴时代之约，圆心中之梦。", author: "", source: "人民日报" },
+  { id: 14, content: "梦想从不是空想，而是一步一步走出来的路。", author: "", source: "人民日报" },
+  { id: 15, content: "追梦者的眼里有光，奋斗者的脚下有力量。", author: "", source: "人民日报" },
+  { id: 16, content: "平凡的日子里，奋斗让梦想有了重量。", author: "", source: "人民日报" },
+  { id: 17, content: "不辜负梦想，不怠慢时光，奋斗自成光芒。", author: "", source: "人民日报" },
+  { id: 18, content: "梦想如星，奋斗似舟，载你渡向远方。", author: "", source: "人民日报" },
+  { id: 19, content: "每一份坚持，都在为梦想铺路。", author: "", source: "人民日报" },
+  { id: 20, content: "新时代的追梦者，当以奋斗定义人生。", author: "", source: "人民日报" },
+  { id: 21, content: "梦想的温度，藏在奋斗的每一个瞬间里。", author: "", source: "人民日报" },
+  { id: 22, content: "敢做梦、能奋斗，就是青春最美的模样。", author: "", source: "人民日报" },
+  { id: 23, content: "为梦想拼搏的人，永远年轻，永远热泪盈眶。", author: "", source: "人民日报" },
+  { id: 24, content: "奋斗让平凡有了意义，梦想让未来有了方向。", author: "", source: "人民日报" },
+  { id: 25, content: "向着梦想奔跑，每一步都算数。", author: "", source: "人民日报" },
+  { id: 26, content: "时代在变，我们的征途是星辰大海。", author: "", source: "人民日报" },
+  { id: 27, content: "影响世界，年轻的你我都可这般追求。", author: "", source: "人民日报" },
+  { id: 28, content: "你有多大成色，世界就给你多大脸色。", author: "", source: "人民日报" },
+  { id: 29, content: "经得住考验方能成长，追得上阳光才见希望。", author: "", source: "人民日报" },
+  { id: 30, content: "不选放弃的路，必走成长的路，做“不一样的烟火”。", author: "", source: "人民日报" },
+  { id: 31, content: "青春的意义，在于敢试错、敢突破、敢成长。", author: "", source: "人民日报" },
+  { id: 32, content: "年轻，就是带着勇气闯世界的资本。", author: "", source: "人民日报" },
+  { id: 33, content: "成长是把哭声调成静音，把脆弱炼成铠甲。", author: "", source: "人民日报" },
+  { id: 34, content: "青春不止诗和远方，还有责任与担当。", author: "", source: "人民日报" },
+  { id: 35, content: "在跌撞中学会坚强，是成长的必修课。", author: "", source: "人民日报" },
+  { id: 36, content: "年轻的心，当装得下星空，也容得下平凡。", author: "", source: "人民日报" },
+  { id: 37, content: "成长不是变复杂，而是学会简单地活。", author: "", source: "人民日报" },
+  { id: 38, content: "青春的字典里，没有“不可能”，只有“试试看”。", author: "", source: "人民日报" },
+  { id: 39, content: "与世界交手，年轻的我们要一直炽热。", author: "", source: "人民日报" },
+  { id: 40, content: "成长是明白：努力，是为了有更多选择。", author: "", source: "人民日报" },
+  { id: 41, content: "青春是用来奋斗的，不是用来挥霍的。", author: "", source: "人民日报" },
+  { id: 42, content: "每一次迷茫，都是成长的契机。", author: "", source: "人民日报" },
+  { id: 43, content: "年轻就要敢“出格”，在突破中找到自己。", author: "", source: "人民日报" },
+  { id: 44, content: "成长是渐渐懂得：平凡不等于平庸。", author: "", source: "人民日报" },
+  { id: 45, content: "青春的底色，是向上的力量，是成长的渴望。", author: "", source: "人民日报" },
+  { id: 46, content: "不怕走弯路，怕的是停在原地不成长。", author: "", source: "人民日报" },
+  { id: 47, content: "年轻的优势，是有时间纠错，有勇气重来。", author: "", source: "人民日报" },
+  { id: 48, content: "成长就是：从前怕黑，如今成了光。", author: "", source: "人民日报" },
+  { id: 49, content: "青春不设限，成长无终点。", author: "", source: "人民日报" },
+  { id: 50, content: "年轻的我们，要做追光者，更要做发光者。", author: "", source: "人民日报" },
+  { id: 51, content: "巨大的用户群体，不仅是金山银山，更是责任如山。", author: "", source: "人民日报" },
+  { id: 52, content: "中国速度背后，是建设者日夜兼程的无怨劳作。", author: "", source: "人民日报" },
+  { id: 53, content: "平凡铸伟大，英雄自人民，立足岗位即担使命。", author: "", source: "人民日报" },
+  { id: 54, content: "大爱前放小爱，与爱人共担风雨，驶向胜利彼岸。", author: "", source: "人民日报" },
+  { id: 55, content: "做“斗战胜佛系”青年，会担当、勇打拼才是真有志。", author: "", source: "人民日报" },
+  { id: 56, content: "使命不是口号，是把每件小事做到极致的坚持。", author: "", source: "人民日报" },
+  { id: 57, content: "担起该担的责，做好该做的事，就是使命所在。", author: "", source: "人民日报" },
+  { id: 58, content: "责任面前，没有旁观者，只有行动者。", author: "", source: "人民日报" },
+  { id: 59, content: "使命在肩，再难也得扛；责任在心，再累也得拼。", author: "", source: "人民日报" },
+  { id: 60, content: "平凡岗位的坚守，就是对使命最好的回答。", author: "", source: "人民日报" },
+  { id: 61, content: "一代人有一代人的使命，接力奋斗才得始终。", author: "", source: "人民日报" },
+  { id: 62, content: "责任是看清生活真相后，依然热爱并守护它。", author: "", source: "人民日报" },
+  { id: 63, content: "使命从不是惊天动地，而是日复一日的靠谱。", author: "", source: "人民日报" },
+  { id: 64, content: "担责的人，眼里有光，心里有方向，脚下有力量。", author: "", source: "人民日报" },
+  { id: 65, content: "把小我融入大我，便是对使命最生动的诠释。", author: "", source: "人民日报" },
+  { id: 66, content: "责任不分大小，能扛事就是真担当。", author: "", source: "人民日报" },
+  { id: 67, content: "使命在前，容不得犹豫；责任在身，退不得半步。", author: "", source: "人民日报" },
+  { id: 68, content: "做分内事，尽心上力，使命自会开花结果。", author: "", source: "人民日报" },
+  { id: 69, content: "责任是“舍我其谁”的勇气，使命是“功成有我”的信念。", author: "", source: "人民日报" },
+  { id: 70, content: "不辜负所托，不敷衍所事，便是尽责守使命。", author: "", source: "人民日报" },
+  { id: 71, content: "使命让平凡有重量，责任让人生有意义。", author: "", source: "人民日报" },
+  { id: 72, content: "危难时挺身而出，平常时坚守岗位，都是责任。", author: "", source: "人民日报" },
+  { id: 73, content: "肩能扛责，手能干事，便是使命的践行者。", author: "", source: "人民日报" },
+  { id: 74, content: "责任是种子，种在心里，长在行动里。", author: "", source: "人民日报" },
+  { id: 75, content: "使命指引方向，责任驱动前行，二者缺一不可。", author: "", source: "人民日报" },
+  { id: 76, content: "修身律己，慎终如始，做到慎独慎初慎微慎友。", author: "", source: "人民日报" },
+  { id: 77, content: "事后反应再快，不如事前未雨绸缪。", author: "", source: "人民日报" },
+  { id: 78, content: "暗处执着生长，终有一日馥郁传香，自律者天不负。", author: "", source: "人民日报" },
+  { id: 79, content: "做好该做的事，出好该出的力，成功幸福都在其中。", author: "", source: "人民日报" },
+  { id: 80, content: "不被外界干扰，独立思考，才能真正拥抱生活。", author: "", source: "人民日报" },
+  { id: 81, content: "自律是清晨的闹钟，不是深夜的懊悔。", author: "", source: "人民日报" },
+  { id: 82, content: "自省是镜子，照见不足，才能不断精进。", author: "", source: "人民日报" },
+  { id: 83, content: "管住自己，才能管好人生，自律即自由。", author: "", source: "人民日报" },
+  { id: 84, content: "每日三省吾身，才能在复盘里成长。", author: "", source: "人民日报" },
+  { id: 85, content: "自律的苦，是为了尝生活的甜。", author: "", source: "人民日报" },
+  { id: 86, content: "不随波逐流，常反观内心，方得清醒。", author: "", source: "人民日报" },
+  { id: 87, content: "真正的自律，是和自己的惰性“死磕”。", author: "", source: "人民日报" },
+  { id: 88, content: "自省不是否定自己，而是为了成为更好的自己。", author: "", source: "人民日报" },
+  { id: 89, content: "能控制情绪的人，才能控制人生的走向。", author: "", source: "人民日报" },
+  { id: 90, content: "自律是日积月累的习惯，不是一时兴起的冲动。", author: "", source: "人民日报" },
+  { id: 91, content: "多回头看看，自省才能少走弯路。", author: "", source: "人民日报" },
+  { id: 92, content: "管好小事，才能成其大，自律藏在细节里。", author: "", source: "人民日报" },
+  { id: 93, content: "不自省的人生，就像无舵的船，容易迷失方向。", author: "", source: "人民日报" },
+  { id: 94, content: "自律给你底气，让你在任何时候都从容不迫。", author: "", source: "人民日报" },
+  { id: 95, content: "睡前想想今天做了啥，自省是成长的加速器。", author: "", source: "人民日报" },
+  { id: 96, content: "抵制诱惑，守住本心，自律者方能行稳致远。", author: "", source: "人民日报" },
+  { id: 97, content: "认识自己，修正自己，自省是最高级的智慧。", author: "", source: "人民日报" },
+  { id: 98, content: "自律的人，有清晰的目标，更有坚定的脚步。", author: "", source: "人民日报" },
+  { id: 99, content: "不找借口，多找方法，自省让你更强大。", author: "", source: "人民日报" },
+  { id: 100, content: "把自律当习惯，人生会给你最好的回馈。", author: "", source: "人民日报" },
+  { id: 101, content: "法安天下，德润人心，二者相得益彰。", author: "", source: "人民日报" },
+  { id: 102, content: "即便不与人为善，也别作恶，无礼拉低人品。", author: "", source: "人民日报" },
+  { id: 103, content: "美的认识需凝聚共识，简单评价难以服众。", author: "", source: "人民日报" },
+  { id: 104, content: "修为、气度定义人，修养内涵也能给人机会。", author: "", source: "人民日报" },
+  { id: 105, content: "法律是成文的道德，道德是内心的法律。", author: "", source: "人民日报" },
+  { id: 106, content: "善良是底线，不是软弱，是最高级的修养。", author: "", source: "人民日报" },
+  { id: 107, content: "德不配位，必有灾殃，修德是终身功课。", author: "", source: "人民日报" },
+  { id: 108, content: "修养藏在细节里，一句话、一个举动见人品。", author: "", source: "人民日报" },
+  { id: 109, content: "守得住道德底线，才能站得稳人生高台。", author: "", source: "人民日报" },
+  { id: 110, content: "与人为善，不仅是给别人温暖，也是给自己退路。", author: "", source: "人民日报" },
+  { id: 111, content: "道德不是枷锁，是让社会更美好的粘合剂。", author: "", source: "人民日报" },
+  { id: 112, content: "真正的高贵，是优于过去的自己，修德不停。", author: "", source: "人民日报" },
+  { id: 113, content: "待人接物有温度，是修养最直观的体现。", author: "", source: "人民日报" },
+  { id: 114, content: "不欺暗室，不违本心，是道德修养的极致。", author: "", source: "人民日报" },
+  { id: 115, content: "道德是照亮人心的光，能驱散一切阴霾。", author: "", source: "人民日报" },
+  { id: 116, content: "修德从不是高调，是举手投足间的得体。", author: "", source: "人民日报" },
+  { id: 117, content: "尊重他人，是最基本的道德，也是最好的修养。", author: "", source: "人民日报" },
+  { id: 118, content: "道德的力量，能让平凡的人闪耀不凡的光。", author: "", source: "人民日报" },
+  { id: 119, content: "不因善小而不为，细节处见道德修为。", author: "", source: "人民日报" },
+  { id: 120, content: "修养如春风，润物无声，却影响深远。", author: "", source: "人民日报" },
+  { id: 121, content: "道德是社会的基石，人人修德，社会才和谐。", author: "", source: "人民日报" },
+  { id: 122, content: "有修养的人，懂得换位思考，体谅他人不易。", author: "", source: "人民日报" },
+  { id: 123, content: "道德修养，是一生的修行，永无止境。", author: "", source: "人民日报" },
+  { id: 124, content: "守住道德底线，才能守住人生的尊严。", author: "", source: "人民日报" },
+  { id: 125, content: "修德不分年龄，从现在开始，永远不晚。", author: "", source: "人民日报" },
+  { id: 126, content: "山再高，往上攀总能登顶；路再长，走下去定能到达。", author: "", source: "人民日报" },
+  { id: 127, content: "选择是一时的，人生是永恒的，关键在锲而不舍。", author: "", source: "人民日报" },
+  { id: 128, content: "真正的优秀，是自己和自己死磕，选择决定人生。", author: "", source: "人民日报" },
+  { id: 129, content: "以韦编三绝的毅力，勇攀高峰，引领世界潮流。", author: "", source: "人民日报" },
+  { id: 130, content: "蓄积韧性，砥砺品格，用行动凝聚复兴正能量。", author: "", source: "人民日报" },
+  { id: 131, content: "坚持不是熬日子，是朝着目标步步靠近。", author: "", source: "人民日报" },
+  { id: 132, content: "奋进者的字典里，没有“差不多”，只有“再努力”。", author: "", source: "人民日报" },
+  { id: 133, content: "行百里者半九十，最后一步最关键，要咬牙坚持。", author: "", source: "人民日报" },
+  { id: 134, content: "不怕慢，就怕站，奋进的脚步不能停。", author: "", source: "人民日报" },
+  { id: 135, content: "困难像弹簧，你强它就弱，坚持就能赢。", author: "", source: "人民日报" },
+  { id: 136, content: "奋进是给人生最好的答案，坚持是给梦想最好的交代。", author: "", source: "人民日报" },
+  { id: 137, content: "不是看到希望才坚持，是坚持了才看到希望。", author: "", source: "人民日报" },
+  { id: 138, content: "把每次想放弃的瞬间，都变成再坚持的理由。", author: "", source: "人民日报" },
+  { id: 139, content: "奋进的路上，累是常态，不放弃是姿态。", author: "", source: "人民日报" },
+  { id: 140, content: "坚持的意义，在于把“不可能”变成“我做到了”。", author: "", source: "人民日报" },
+  { id: 141, content: "每天进步一点，坚持一年就是巨大飞跃。", author: "", source: "人民日报" },
+  { id: 142, content: "奋进者从不说“太晚了”，开始了就不算晚。", author: "", source: "人民日报" },
+  { id: 143, content: "成大事者，都懂得在煎熬中坚持，在坚持中奋进。", author: "", source: "人民日报" },
+  { id: 144, content: "向着目标，日拱一卒，功不唐捐。", author: "", source: "人民日报" },
+  { id: 145, content: "坚持的过程很苦，但结果很甜，值得全力以赴。", author: "", source: "人民日报" },
+  { id: 146, content: "奋进不是和别人比，是和昨天的自己比。", author: "", source: "人民日报" },
+  { id: 147, content: "越是难走的路，走过去越有成就感，要坚持。", author: "", source: "人民日报" },
+  { id: 148, content: "坚持的人，终会被世界温柔以待。", author: "", source: "人民日报" },
+  { id: 149, content: "奋进是生活的常态，不是一时的激情。", author: "", source: "人民日报" },
+  { id: 150, content: "千磨万击还坚劲，任尔东西南北风，坚持者胜。", author: "", source: "人民日报" },
+  { id: 151, content: "看得见山，望得见水，记得住乡愁。", author: "", source: "人民日报" },
+  { id: 152, content: "百年征程波澜壮阔，百年初心历久弥坚。", author: "", source: "人民日报" },
+  { id: 153, content: "仰望历史，家国情怀熠熠生辉；跨越长河，其情绵绵不断。", author: "", source: "人民日报" },
+  { id: 154, content: "家国情怀根植精神沃土，是民族繁盛之基。", author: "", source: "人民日报" },
+  { id: 155, content: "从古人诗句到今人歌声，无不体现深厚家国情怀。", author: "", source: "人民日报" },
+  { id: 156, content: "家是最小国，国是千万家，家国本是一体。", author: "", source: "人民日报" },
+  { id: 157, content: "为国争光，不是口号，是行动中的赤诚。", author: "", source: "人民日报" },
+  { id: 158, content: "乡愁是邮票，是船票，是心底对家国的眷恋。", author: "", source: "人民日报" },
+  { id: 159, content: "爱国是本能，是刻在骨子里的深情与担当。", author: "", source: "人民日报" },
+  { id: 160, content: "苟利国家生死以，岂因祸福避趋之，此为大义。", author: "", source: "人民日报" },
+  { id: 161, content: "家国情怀，是危难时的挺身而出，是平常时的坚守。", author: "", source: "人民日报" },
+  { id: 162, content: "为祖国骄傲，为民族自豪，是最朴素的情感。", author: "", source: "人民日报" },
+  { id: 163, content: "把个人理想融入国家发展，方显家国大义。", author: "", source: "人民日报" },
+  { id: 164, content: "守护家国，是每个中国人的责任与荣光。", author: "", source: "人民日报" },
+  { id: 165, content: "家国情怀，藏在“月是故乡明”的思念里。", author: "", source: "人民日报" },
+  { id: 166, content: "国强则民安，民强则国盛，家国同频共振。", author: "", source: "人民日报" },
+  { id: 167, content: "爱国，是做好分内事，是为祖国添砖加瓦。", author: "", source: "人民日报" },
+  { id: 168, content: "历史川流不息，家国情怀代代相传，从未褪色。", author: "", source: "人民日报" },
+  { id: 169, content: "为了家国安宁，多少人默默奉献，无怨无悔。", author: "", source: "人民日报" },
+  { id: 170, content: "家国是港湾，是后盾，是永远的归宿与牵挂。", author: "", source: "人民日报" },
+  { id: 171, content: "爱祖国的文化，爱祖国的土地，爱祖国的人民。", author: "", source: "人民日报" },
+  { id: 172, content: "家国情怀，让平凡的生命有了不凡的重量。", author: "", source: "人民日报" },
+  { id: 173, content: "为中华之崛起而读书，是代代青年的志向。", author: "", source: "人民日报" },
+  { id: 174, content: "守护好家国的现在，才能开创更好的未来。", author: "", source: "人民日报" },
+  { id: 175, content: "家国在心，无论走到哪里，都有根的牵挂。", author: "", source: "人民日报" },
+  { id: 176, content: "传承不易，创新犹难，文化发展需兼顾二者。", author: "", source: "人民日报" },
+  { id: 177, content: "参天之木必有其根，怀山之水必有其源。", author: "", source: "人民日报" },
+  { id: 178, content: "青铜玉器、竹简木牍，是滋养文化血脉的“甘泉”。", author: "", source: "人民日报" },
+  { id: 179, content: "单一生活方式让社会乏味，多元才显活力。", author: "", source: "人民日报" },
+  { id: 180, content: "文化差异非差距，前者是特质不同，后者是优劣判断。", author: "", source: "人民日报" },
+  { id: 181, content: "文化不是复古，是在传承中创新，在创新中发展。", author: "", source: "人民日报" },
+  { id: 182, content: "丢掉文化根脉，就像树断了根，难以参天。", author: "", source: "人民日报" },
+  { id: 183, content: "文化自信，是对自己的根与魂的认同与坚守。", author: "", source: "人民日报" },
+  { id: 184, content: "对待传统文化，要取其精华，去其糟粕，辩证传承。", author: "", source: "人民日报" },
+  { id: 185, content: "文化交流不是取代，是互鉴互学，丰富自身。", author: "", source: "人民日报" },
+  { id: 186, content: "没有文化的繁荣，就没有民族的伟大复兴。", author: "", source: "人民日报" },
+  { id: 187, content: "文化是软实力，能润物无声，凝聚人心。", author: "", source: "人民日报" },
+  { id: 188, content: "盲目崇洋不可取，妄自菲薄更不该，文化需自信。", author: "", source: "人民日报" },
+  { id: 189, content: "每个民族的文化都独特，都值得尊重与珍惜。", author: "", source: "人民日报" },
+  { id: 190, content: "文化创新不是乱改，是守住本真，贴近时代。", author: "", source: "人民日报" },
+  { id: 191, content: "从古籍中汲取智慧，让传统文化活在当下。", author: "", source: "人民日报" },
+  { id: 192, content: "文化如水，能穿越时空，连接古今未来。", author: "", source: "人民日报" },
+  { id: 193, content: "忽视文化传承，就像忘了回家的路，迷失方向。", author: "", source: "人民日报" },
+  { id: 194, content: "文化的生命力，在于能回应时代之问，解时代之惑。", author: "", source: "人民日报" },
+  { id: 195, content: "多元文化共存，才让世界如花园般多彩。", author: "", source: "人民日报" },
+  { id: 196, content: "保护文化遗产，是守护民族的记忆与乡愁。", author: "", source: "人民日报" },
+  { id: 197, content: "文化不是高高在上的古董，是融入生活的烟火。", author: "", source: "人民日报" },
+  { id: 198, content: "传承文化，不是被动接受，是主动参与，用心感悟。", author: "", source: "人民日报" },
+  { id: 199, content: "文化反思不是否定，是为了更清醒地走向未来。", author: "", source: "人民日报" },
+  { id: 200, content: "让文化之树常青，需培土施肥，更需修剪创新。", author: "", source: "人民日报" }
 ];
 
 export default quotes;
