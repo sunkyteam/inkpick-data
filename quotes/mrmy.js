@@ -1,599 +1,305 @@
-// 名人名言数据
 const quotes = [
-  {
-    id: 1,
-    content: "世上无难事，只怕有心人",
-    author: "中国谚语",
-    source: ""
-  },
-  {
-    id: 2,
-    content: "知识就是力量",
-    author: "弗朗西斯·培根",
-    source: ""
-  },
-  {
-    id: 3,
-    content: "走自己的路，让别人说去",
-    author: "但丁",
-    source: ""
-  },
-  {
-    id: 4,
-    content: "天才就是百分之九十九的汗水加百分之一灵感",
-    author: "爱迪生",
-    source: ""
-  },
-  {
-    id: 5,
-    content: "生活不是等待风暴过去，而是学会在雨中跳舞",
-    author: "维维安·格林",
-    source: ""
-  },
-  {
-    id: 6,
-    content: "真正的才智是刚毅的志向",
-    author: "拿破仑",
-    source: ""
-  },
-  {
-    id: 7,
-    content: "沉默是最高的轻蔑",
-    author: "鲁迅",
-    source: ""
-  },
-  {
-    id: 8,
-    content: "悲剧将人生有价值的东西毁灭给人看",
-    author: "鲁迅",
-    source: ""
-  },
-  {
-    id: 9,
-    content: "世界上最宽阔的是海洋，比海洋更宽阔的是天空，比天空更宽阔的是人的胸怀",
-    author: "雨果",
-    source: ""
-  },
-  {
-    id: 10,
-    content: "婚姻是一座围城，城外的人想进去，城里的人想出来",
-    author: "钱钟书",
-    source: "《围城》"
-  },
-  {
-    id: 11,
-    content: "人总是在接近幸福时倍感幸福，在幸福进行时却患得患失",
-    author: "张爱玲",
-    source: ""
-  },
-  {
-    id: 12,
-    content: "岁月悠悠，衰微只及肌肤；热忱抛却，颓废必致灵魂",
-    author: "塞缪尔·厄尔曼",
-    source: ""
-  },
-  {
-    id: 13,
-    content: "世界上最快乐的事，莫过于为理想而奋斗",
-    author: "苏格拉底",
-    source: ""
-  },
-  {
-    id: 14,
-    content: "快乐不在于事情，而在于我们自己",
-    author: "理查德·瓦格纳",
-    source: ""
-  },
-  {
-    id: 15,
-    content: "我们需要英雄，因为英雄创造历史",
-    author: "罗曼·罗兰",
-    source: ""
-  },
-  {
-    id: 16,
-    content: "勇者愤怒，抽刃向更强者；怯者愤怒，却抽刃向更弱者",
-    author: "鲁迅",
-    source: ""
-  },
-  {
-    id: 17,
-    content: "失败乃成功之母",
-    author: "温德尔·菲利普斯",
-    source: ""
-  },
-  {
-    id: 18,
-    content: "最大的忍辱是牺牲，最大的牺牲是预备反抗",
-    author: "老舍",
-    source: ""
-  },
-  {
-    id: 19,
-    content: "生活是一种律动，须有光有影，有晴有雨",
-    author: "老舍",
-    source: ""
-  },
-  {
-    id: 20,
-    content: "把忍受变成享受，是精神对于物质的最大胜利",
-    author: "钱钟书",
-    source: ""
-  },
-  {
-    id: 21,
-    content: "回忆若是有气味，便是樟脑的香，甜而稳妥",
-    author: "张爱玲",
-    source: ""
-  },
-  {
-    id: 22,
-    content: "以淡字交友，以聋字止谤，以刻字责己",
-    author: "李叔同",
-    source: ""
-  },
-  {
-    id: 23,
-    content: "人生重要的不是所处的位置，而是所朝的方向",
-    author: "保罗·柯艾略",
-    source: ""
-  },
-  {
-    id: 24,
-    content: "未经审视的人生不值得度过",
-    author: "苏格拉底",
-    source: ""
-  },
-  {
-    id: 25,
-    content: "教育不是注满一桶水，而是点燃一把火",
-    author: "威廉·巴特勒·叶芝",
-    source: ""
-  },
-  {
-    id: 26,
-    content: "如果你渴望和平，就要准备战争",
-    author: "韦格蒂乌斯",
-    source: ""
-  },
-  {
-    id: 27,
-    content: "时间就是性命，无端空耗别人时间，无异于谋财害命",
-    author: "鲁迅",
-    source: ""
-  },
-  {
-    id: 28,
-    content: "友谊限于两人范围之内",
-    author: "亚当·斯密",
-    source: ""
-  },
-  {
-    id: 29,
-    content: "独立之精神，自由之思想",
-    author: "陈寅恪",
-    source: ""
-  },
-  {
-    id: 30,
-    content: "草木不经霜雪，则生意不固；人不经忧患，则德慧不成",
-    author: "沈近思",
-    source: ""
-  },
-  {
-    id: 31,
-    content: "即使踏着荆棘，也不觉悲苦；纵有泪可落，亦不是悲凉",
-    author: "冰心",
-    source: ""
-  },
-  {
-    id: 32,
-    content: "只有经历过地狱磨砺，才有创造天堂的力量",
-    author: "尼采",
-    source: ""
-  },
-  {
-    id: 33,
-    content: "真正的平静，不是避开车马喧嚣，而是在心中修篱种菊",
-    author: "白落梅",
-    source: ""
-  },
-  {
-    id: 34,
-    content: "能够放下的越多，就越富有",
-    author: "梭罗",
-    source: ""
-  },
-  {
-    id: 35,
-    content: "和命运结伴而行的人，永远不会迷路",
-    author: "塞涅卡",
-    source: ""
-  },
-  {
-    id: 36,
-    content: "人诗意地栖居在大地上",
-    author: "海德格尔",
-    source: ""
-  },
-  {
-    id: 37,
-    content: "不能听命于自己者，就要受命于他人",
-    author: "尼采",
-    source: ""
-  },
-  {
-    id: 38,
-    content: "人类从历史中学到的唯一教训，就是无法从历史中吸取教训",
-    author: "黑格尔",
-    source: ""
-  },
-  {
-    id: 39,
-    content: "朝闻道，夕死可矣",
-    author: "孔子",
-    source: "《论语》"
-  },
-  {
-    id: 40,
-    content: "志不强者智不达，言不信者行不果",
-    author: "墨子",
-    source: ""
-  },
-  {
-    id: 41,
-    content: "非淡泊无以明志，非宁静无以致远",
-    author: "诸葛亮",
-    source: ""
-  },
-  {
-    id: 42,
-    content: "傻瓜对自己总是确定，智者则充满疑虑",
-    author: "罗素",
-    source: ""
-  },
-  {
-    id: 43,
-    content: "九州生气恃风雷，万马齐喑究可哀",
-    author: "龚自珍",
-    source: ""
-  },
-  {
-    id: 44,
-    content: "修养的花儿在寂静中开过去了，成功的果子便在光明里结实",
-    author: "冰心",
-    source: ""
-  },
-  {
-    id: 45,
-    content: "青春时光转眼即逝",
-    author: "贺拉斯",
-    source: ""
-  },
-  {
-    id: 46,
-    content: "骄傲自满是我们的一座可怕的陷阱",
-    author: "老舍",
-    source: ""
-  },
-  {
-    id: 47,
-    content: "人生下来不是为了拖着锁链，而是为了展开双翼",
-    author: "雨果",
-    source: ""
-  },
-  {
-    id: 48,
-    content: "哪里有阴影，哪里就有光",
-    author: "纪伯伦",
-    source: ""
-  },
-  {
-    id: 49,
-    content: "光明与黑暗交织厮杀，这便是我们所在的世界",
-    author: "维克多·雨果",
-    source: ""
-  },
-  {
-    id: 50,
-    content: "当真理还在穿鞋时，谎言已走遍半个世界",
-    author: "马克·吐温",
-    source: ""
-  },
-  {
-    id: 51,
-    content: "在时间的大钟上，只有两个字——现在",
-    author: "莎士比亚",
-    source: ""
-  },
-  {
-    id: 52,
-    content: "给我一个支点，我就能撬起整个地球",
-    author: "阿基米德",
-    source: ""
-  },
-  {
-    id: 53,
-    content: "当你为错过太阳而哭泣，你也将错过群星",
-    author: "泰戈尔",
-    source: ""
-  },
-  {
-    id: 54,
-    content: "战争不决定谁对了，只决定谁留下了",
-    author: "罗素",
-    source: ""
-  },
-  {
-    id: 55,
-    content: "人生而自由，却无往不在枷锁之中",
-    author: "卢梭",
-    source: ""
-  },
-  {
-    id: 56,
-    content: "存在即合理",
-    author: "黑格尔",
-    source: ""
-  },
-  {
-    id: 57,
-    content: "我思故我在",
-    author: "笛卡尔",
-    source: ""
-  },
-  {
-    id: 58,
-    content: "最大的风险是不冒任何风险",
-    author: "马克·扎克伯格",
-    source: ""
-  },
-  {
-    id: 59,
-    content: "预测未来的最好方式是创造它",
-    author: "艾伦·凯",
-    source: ""
-  },
-  {
-    id: 60,
-    content: "不要问国家能为你做什么，问你能为国家做什么",
-    author: "肯尼迪",
-    source: ""
-  },
-  {
-    id: 61,
-    content: "唯一不变的是变化本身",
-    author: "赫拉克利特",
-    source: ""
-  },
-  {
-    id: 62,
-    content: "生命中只有两种悲剧：一种是得不到想要的，另一种是得到了",
-    author: "王尔德",
-    source: ""
-  },
-  {
-    id: 63,
-    content: "人生如同故事，重要的不是长度，而是精彩程度",
-    author: "塞涅卡",
-    source: ""
-  },
-  {
-    id: 64,
-    content: "教育是把火炬点燃，而不是把容器灌满",
-    author: "威廉·巴特勒·叶芝",
-    source: ""
-  },
-  {
-    id: 65,
-    content: "智慧不仅仅存在于知识中，更存在于运用知识的能力中",
-    author: "亚里士多德",
-    source: ""
-  },
-  {
-    id: 66,
-    content: "我们不但善于破坏一个旧世界，我们还将善于建设一个新世界",
-    author: "毛泽东",
-    source: ""
-  },
-  {
-    id: 67,
-    content: "书籍是人类进步的阶梯",
-    author: "高尔基",
-    source: ""
-  },
-  {
-    id: 68,
-    content: "谎言的代价不仅是它被当真，而是我们再也无法辨别真相",
-    author: "乔治·奥威尔",
-    source: ""
-  },
-  {
-    id: 69,
-    content: "战争是政治的延续",
-    author: "克劳塞维茨",
-    source: ""
-  },
-  {
-    id: 70,
-    content: "活着就是要改变世界，否则活着还有什么意义",
-    author: "乔布斯",
-    source: ""
-  },
-  {
-    id: 71,
-    content: "自由不是无代价的",
-    author: "托马斯·潘恩",
-    source: ""
-  },
-  {
-    id: 72,
-    content: "世界以痛吻我，要我报之以歌",
-    author: "泰戈尔",
-    source: ""
-  },
-  {
-    id: 73,
-    content: "当你说不可能时，只是在表达自己的局限",
-    author: "爱因斯坦",
-    source: ""
-  },
-  {
-    id: 74,
-    content: "教育的根是苦的，但其果实是甜的",
-    author: "亚里士多德",
-    source: ""
-  },
-  {
-    id: 75,
-    content: "我们关心的不是你是否失败，而是你是否甘心失败",
-    author: "林肯",
-    source: ""
-  },
-  {
-    id: 76,
-    content: "树的方向由风决定，人的方向由自己决定",
-    author: "卡耐基",
-    source: ""
-  },
-  {
-    id: 77,
-    content: "最高的道德是爱国心",
-    author: "拿破仑",
-    source: ""
-  },
-  {
-    id: 78,
-    content: "时间是最好的作者，它总会写出完美结局",
-    author: "卓别林",
-    source: ""
-  },
-  {
-    id: 79,
-    content: "科学没有国界，科学家却有祖国",
-    author: "巴斯德",
-    source: ""
-  },
-  {
-    id: 80,
-    content: "生命中最沉重的负担不是工作，而是无聊",
-    author: "米兰·昆德拉",
-    source: ""
-  },
-  {
-    id: 81,
-    content: "艺术是让我们认识真理的谎言",
-    author: "毕加索",
-    source: ""
-  },
-  {
-    id: 82,
-    content: "管理就是预测和计划，组织、指挥、协调以及控制",
-    author: "亨利·法约尔",
-    source: ""
-  },
-  {
-    id: 83,
-    content: "改变世界的不是武器，而是思想",
-    author: "维克多·雨果",
-    source: ""
-  },
-  {
-    id: 84,
-    content: "真正的发现之旅不在于寻找新风景，而在于拥有新眼光",
-    author: "普鲁斯特",
-    source: ""
-  },
-  {
-    id: 85,
-    content: "最有力量的时刻，是坚持到最后一分钟",
-    author: "丘吉尔",
-    source: ""
-  },
-  {
-    id: 86,
-    content: "创新是区别领导者和追随者的唯一标准",
-    author: "乔布斯",
-    source: ""
-  },
-  {
-    id: 87,
-    content: "历史从不重复，但它会押韵",
-    author: "马克·吐温",
-    source: ""
-  },
-  {
-    id: 88,
-    content: "人必须珍藏某种信念，必须握住某种梦想和希望，必须有彩虹，必须有歌可唱，必须有高贵的事物可以投身",
-    author: "约翰·杜威",
-    source: ""
-  },
-  {
-    id: 89,
-    content: "衡量一个人的标准，是看他如何面对逆境",
-    author: "柏拉图",
-    source: ""
-  },
-  {
-    id: 90,
-    content: "最强大的力量是温柔",
-    author: "老子",
-    source: ""
-  },
-  {
-    id: 91,
-    content: "万物皆有裂痕，那是光照进来的地方",
-    author: "莱昂纳德·科恩",
-    source: ""
-  },
-  {
-    id: 92,
-    content: "政治是可能性的艺术",
-    author: "俾斯麦",
-    source: ""
-  },
-  {
-    id: 93,
-    content: "没有伟大的愿望，就没有伟大的天才",
-    author: "巴尔扎克",
-    source: ""
-  },
-  {
-    id: 94,
-    content: "摄影是凝固的时间，诗歌是凝固的情感",
-    author: "苏珊·桑塔格",
-    source: ""
-  },
-  {
-    id: 95,
-    content: "战争太重要了，不能交给将军们",
-    author: "克列孟梭",
-    source: ""
-  },
-  {
-    id: 96,
-    content: "法律沉默时，暴力即发声",
-    author: "西塞罗",
-    source: ""
-  },
-  {
-    id: 97,
-    content: "音乐是表达那些无以言表之物的艺术",
-    author: "维克多·雨果",
-    source: ""
-  },
-  {
-    id: 98,
-    content: "我们需要的不是生存，而是生活",
-    author: "亚里士多德",
-    source: ""
-  },
-  {
-    id: 99,
-    content: "革命尚未成功，同志仍须努力",
-    author: "孙中山",
-    source: ""
-   }
+
+  { id: 1, content: "三人行，必有我师", author: "孔子", source: "" },
+  { id: 2, content: "己所不欲，勿施于人", author: "孔子", source: "" },
+  { id: 3, content: "知之为知之，不知为不知", author: "孔子", source: "" },
+  { id: 4, content: "学而不思则罔，思而不学则殆", author: "孔子", source: "" },
+  { id: 5, content: "敏而好学，不耻下问", author: "孔子", source: "" },
+  { id: 6, content: "君子坦荡荡，小人常戚戚", author: "孔子", source: "" },
+  { id: 7, content: "温故而知新，可以为师矣", author: "孔子", source: "" },
+  { id: 8, content: "人无远虑，必有近忧", author: "孔子", source: "" },
+  { id: 9, content: "逝者如斯夫，不舍昼夜", author: "孔子", source: "" },
+  { id: 10, content: "道不同，不相为谋", author: "孔子", source: "" },
+  { id: 11, content: "千里之行，始于足下", author: "老子", source: "" },
+  { id: 12, content: "祸兮福之所倚，福兮祸之所伏", author: "老子", source: "" },
+  { id: 13, content: "上善若水", author: "老子", source: "" },
+  { id: 14, content: "知足不辱，知止不殆", author: "老子", source: "" },
+  { id: 15, content: "大智若愚，大巧若讷", author: "老子", source: "" },
+  { id: 16, content: "不积跬步，无以至千里", author: "荀子", source: "" },
+  { id: 17, content: "锲而不舍，金石可镂", author: "荀子", source: "" },
+  { id: 18, content: "青出于蓝，而胜于蓝", author: "荀子", source: "" },
+  { id: 19, content: "君子之交淡如水", author: "庄子", source: "" },
+  { id: 20, content: "吾生也有涯，而知也无涯", author: "庄子", source: "" },
+  { id: 21, content: "知彼知己，百战不殆", author: "孙武", source: "" },
+  { id: 22, content: "不战而屈人之兵", author: "孙武", source: "" },
+  { id: 23, content: "攻其无备，出其不意", author: "孙武", source: "" },
+  { id: 24, content: "富贵不能淫，贫贱不能移，威武不能屈", author: "孟子", source: "" },
+  { id: 25, content: "老吾老以及人之老", author: "孟子", source: "" },
+  { id: 26, content: "天时不如地利，地利不如人和", author: "孟子", source: "" },
+  { id: 27, content: "生于忧患，死于安乐", author: "孟子", source: "" },
+  { id: 28, content: "穷则独善其身，达则兼济天下", author: "孟子", source: "" },
+  { id: 29, content: "言不信者，行不果", author: "墨子", source: "" },
+  { id: 30, content: "兼相爱，交相利", author: "墨子", source: "" },
+  { id: 31, content: "时间就是生命", author: "鲁迅", source: "" },
+  { id: 32, content: "横眉冷对千夫指，俯首甘为孺子牛", author: "鲁迅", source: "" },
+  { id: 33, content: "时间就像海绵里的水", author: "鲁迅", source: "" },
+  { id: 34, content: "友谊是两颗心真诚相待", author: "鲁迅", source: "" },  
+  { id: 35, content: "事实胜于雄辩", author: "鲁迅", source: "" },
+  { id: 36, content: "为中华之崛起而读书", author: "周恩来", source: "" },
+  { id: 37, content: "说真话，鼓真劲", author: "周恩来", source: "" },
+  { id: 38, content: "与有肝胆人共事", author: "周恩来", source: "" },
+  { id: 39, content: "饭可一日不吃，觉可一日不睡，书不可一日不读", author: "毛泽东", source: "" },
+  { id: 40, content: "没有调查就没有发言权", author: "毛泽东", source: "" },
+  { id: 41, content: "星星之火，可以燎原", author: "毛泽东", source: "" },
+  { id: 42, content: "生命的意义在于奉献", author: "巴金", source: "" },
+  { id: 43, content: "要做一个在寒天送炭的人", author: "巴金", source: "" },
+  { id: 44, content: "智慧源于勤奋", author: "华罗庚", source: "" },
+  { id: 45, content: "勤能补拙是良训", author: "华罗庚", source: "" },
+  { id: 46, content: "独立之精神，自由之思想", author: "陈寅恪", source: "" },
+  { id: 47, content: "踏着荆棘不觉悲苦", author: "冰心", source: "" },
+  { id: 48, content: "修养在寂静中开花", author: "冰心", source: "" },
+  { id: 49, content: "骄傲自满是可怕的陷阱", author: "老舍", source: "" },
+  { id: 50, content: "生活是律动，有光有影", author: "老舍", source: "" },
+  { id: 51, content: "婚姻是座围城", author: "钱钟书", source: "" },
+  { id: 52, content: "把忍受变享受是胜利", author: "钱钟书", source: "" },
+  { id: 53, content: "人接近幸福时倍感幸福", author: "张爱玲", source: "" },
+  { id: 54, content: "回忆的气味像樟脑的香", author: "张爱玲", source: "" },
+  { id: 55, content: "创新是民族进步的灵魂", author: "江泽民", source: "" },
+  { id: 56, content: "科学技术是第一生产力", author: "邓小平", source: "" },
+  { id: 57, content: "实践是检验真理的唯一标准", author: "胡福明", source: "" },
+  { id: 58, content: "路漫漫其修远兮，吾将上下而求索", author: "屈原", source: "" },
+  { id: 59, content: "苟利国家生死以，岂因祸福避趋之", author: "林则徐", source: "" },
+  { id: 60, content: "师夷长技以制夷", author: "魏源", source: "" },
+  { id: 61, content: "我思故我在", author: "笛卡尔", source: "" },
+  { id: 62, content: "知识就是力量", author: "培根", source: "" },
+  { id: 63, content: "顺从自然，才能驾驭自然", author: "培根", source: "" },
+  { id: 64, content: "良好的开端是成功的一半", author: "亚里士多德", source: "" },
+  { id: 65, content: "智慧在于运用知识", author: "亚里士多德", source: "" },
+  { id: 66, content: "教育的根苦，果实甜", author: "亚里士多德", source: "" },
+  { id: 67, content: "我们需要的是生活，不是生存", author: "亚里士多德", source: "" },
+  { id: 68, content: "未经审视的人生不值得过", author: "苏格拉底", source: "" },
+  { id: 69, content: "真理站在少数人一边", author: "柏拉图", source: "" },
+  { id: 70, content: "美是真理的光辉", author: "柏拉图", source: "" },
+  { id: 71, content: "衡量人看他如何面对逆境", author: "柏拉图", source: "" },
+  { id: 72, content: "唯一不变的是变化", author: "赫拉克利特", source: "" },
+  { id: 73, content: "存在即合理", author: "黑格尔", source: "" },
+  { id: 74, content: "人是万物的尺度", author: "普罗泰戈拉", source: "" },
+  { id: 75, content: "法律沉默时，暴力发声", author: "西塞罗", source: "" },
+  { id: 76, content: "认识你自己", author: "苏格拉底", source: "" },
+  { id: 77, content: "最优秀的人就是你自己", author: "苏格拉底", source: "" },
+  { id: 78, content: "唯有死者能看见战争的终结", author: "柏拉图", source: "" },
+  { id: 79, content: "思想的动摇并非正确与错误之间的摇摆", author: "帕斯卡尔", source: "" },
+  { id: 80, content: "人是会思考的芦苇", author: "帕斯卡尔", source: "" },
+  { id: 81, content: "知识越多，越感无知", author: "笛卡尔", source: "" },
+  { id: 82, content: "怀疑是智慧的源头", author: "笛卡尔", source: "" },
+  { id: 83, content: "幸运之机好比市场", author: "培根", source: "" },
+  { id: 84, content: "读史使人明智", author: "培根", source: "" },
+  { id: 85, content: "爱情是会让人疯狂的", author: "柏拉图", source: "" },
+  { id: 86, content: "勇气是智慧和一定程度教养的必然结果", author: "亚里士多德", source: "" },
+  { id: 87, content: "在不幸中，有用的朋友更为必要", author: "亚里士多德", source: "" },
+  { id: 88, content: "人生最终的价值在于觉醒和思考的能力", author: "亚里士多德", source: "" },
+  { id: 89, content: "真正的朋友，是一个灵魂孕育在两个躯体里", author: "亚里士多德", source: "" },
+  { id: 90, content: "幸福在于自主自足之中", author: "亚里士多德", source: "" },
+  { id: 91, content: "想象力比知识重要", author: "爱因斯坦", source: "" },
+  { id: 92, content: "提出问题比解决问题重要", author: "爱因斯坦", source: "" },
+  { id: 93, content: "一个人的价值，看他贡献什么", author: "爱因斯坦", source: "" },
+  { id: 94, content: "说不可能是表达局限", author: "爱因斯坦", source: "" },
+  { id: 95, content: "科学没有国界", author: "巴斯德", source: "" },
+  { id: 96, content: "科学家有祖国", author: "巴斯德", source: "" },
+  { id: 97, content: "机遇偏爱有准备的头脑", author: "巴斯德", source: "" },
+  { id: 98, content: "科学的基础是健康的身体", author: "居里夫人", source: "" },
+  { id: 99, content: "弱者等待时机，强者创造时机", author: "居里夫人", source: "" },
+  { id: 100, content: "我们唯一恐惧的是恐惧本身", author: "罗斯福", source: "" },
+  { id: 101, content: "不要问国家能为你做什么，而要问你能为国家做什么", author: "肯尼迪", source: "" },
+  { id: 102, content: "命运给予机会之杯", author: "尼克松", source: "" },
+  { id: 103, content: "关心你是否甘心失败", author: "林肯", source: "" },
+  { id: 104, content: "最高的道德是爱国心", author: "拿破仑", source: "" },
+  { id: 105, content: "战争是政治的延续", author: "克劳塞维茨", source: "" },
+  { id: 106, content: "自由不是无代价的", author: "潘恩", source: "" },
+  { id: 107, content: "谎言让我们难辨真相", author: "奥威尔", source: "" },
+  { id: 108, content: "人生如故事，重在精彩", author: "塞涅卡", source: "" },
+  { id: 109, content: "生命只有两种悲剧", author: "王尔德", source: "" },
+  { id: 110, content: "凡是过往，皆为序章", author: "莎士比亚", source: "" },
+  { id: 111, content: "简洁是智慧的灵魂", author: "莎士比亚", source: "" },
+  { id: 112, content: "要别人诚信，先自己诚信", author: "莎士比亚", source: "" },
+  { id: 113, content: "能思想的人力量无边", author: "巴尔扎克", source: "" },
+  { id: 114, content: "没有伟大愿望，就没有伟大天才", author: "巴尔扎克", source: "" },
+  { id: 115, content: "幽默是人际关系的润滑剂", author: "马克·吐温", source: "" },
+  { id: 116, content: "历史会押韵", author: "马克·吐温", source: "" },
+  { id: 117, content: "生命中最美好的事物免费", author: "马克·吐温", source: "" },
+  { id: 118, content: "世界以痛吻我，要我报之以歌", author: "泰戈尔", source: "" },
+  { id: 119, content: "错过太阳时不要流泪", author: "泰戈尔", source: "" },
+  { id: 120, content: "谦卑时最接近伟大", author: "泰戈尔", source: "" },
+  { id: 121, content: "活着就是要改变世界", author: "乔布斯", source: "" },
+  { id: 122, content: "创新区分领导者和追随者", author: "乔布斯", source: "" },
+  { id: 123, content: "保持饥饿，保持愚蠢", author: "乔布斯", source: "" },
+  { id: 124, content: "热爱你所做的事", author: "乔布斯", source: "" },
+  { id: 125, content: "专注就是学会说不", author: "乔布斯", source: "" },
+  { id: 126, content: "最大的风险是不冒险", author: "扎克伯格", source: "" },
+  { id: 127, content: "快速行动，打破成规", author: "扎克伯格", source: "" },
+  { id: 128, content: "变化中唯一不变的是学习", author: "扎克伯格", source: "" },
+  { id: 129, content: "乐观是一种智商", author: "马斯克", source: "" },
+  { id: 130, content: "重要的事，值得去做", author: "马斯克", source: "" },
+  { id: 131, content: "用第一性原理思考", author: "马斯克", source: "" },
+  { id: 132, content: "生活是不公平的，去适应", author: "比尔·盖茨", source: "" },
+  { id: 133, content: "创新是做大企业的路", author: "比尔·盖茨", source: "" },
+  { id: 134, content: "成功是糟糕的老师", author: "比尔·盖茨", source: "" },
+  { id: 135, content: "预测未来，不如创造它", author: "艾伦·凯", source: "" },
+  { id: 136, content: "测量什么，就改进什么", author: "彼得·德鲁克", source: "" },
+  { id: 137, content: "管理是实践，不是理论", author: "彼得·德鲁克", source: "" },
+  { id: 138, content: "企业的唯一目的是创造客户", author: "彼得·德鲁克", source: "" },
+  { id: 139, content: "质量是一种习惯", author: "戴明", source: "" },
+  { id: 140, content: "创新是看见常人看不见的东西", author: "德鲁克", source: "" },
+  { id: 141, content: "拖延是最危险的恶习", author: "爱迪生", source: "" },
+  { id: 142, content: "天才是1%的灵感加99%的汗水，但那1%的灵感是最重要的，甚至比那99%的汗水都要重要", author: "爱迪生", source: "" },
+  { id: 143, content: "很多生活中的失败是因为人们在放弃时没有意识到他们离成功有多近", author: "爱迪生", source: "" },
+  { id: 144, content: "我总是在做我不能做的事，为的是从中学会如何去做", author: "毕加索", source: "" },
+  { id: 145, content: "艺术是认识真理的谎言", author: "毕加索", source: "" },
+  { id: 146, content: "不要害怕完美", author: "达利", source: "" },
+  { id: 147, content: "如果我看得远，那是因为我站在巨人的肩上", author: "牛顿", source: "" },
+  { id: 148, content: "如果说我比别人看得更远些，那是因为我站在了巨人的肩上", author: "牛顿", source: "" },
+  { id: 149, content: "我不知道世人怎样看我，但我自己以为我不过像一个在海边玩耍的孩子", author: "牛顿", source: "" },
+  { id: 150, content: "天才只意味着终身不懈的努力", author: "门捷列夫", source: "" },
+  { id: 151, content: "万物皆有裂痕，那是光照进来的地方", author: "科恩", source: "" },
+  { id: 152, content: "时间是最好的作者", author: "卓别林", source: "" },
+  { id: 153, content: "音乐表达无以言表之物", author: "雨果", source: "" },
+  { id: 154, content: "改变世界的是思想", author: "雨果", source: "" },
+  { id: 155, content: "摄影凝固时间，诗歌凝固情感", author: "桑塔格", source: "" },
+  { id: 156, content: "发现之旅在于新眼光", author: "普鲁斯特", source: "" },
+  { id: 157, content: "树的方向由风定，人的由己定", author: "卡耐基", source: "" },
+  { id: 158, content: "幸福的家庭都是相似的", author: "托尔斯泰", source: "" },
+  { id: 159, content: "理想是指路明灯", author: "托尔斯泰", source: "" },
+  { id: 160, content: "人生的价值，并不是用时间，而是用深度去衡量的", author: "托尔斯泰", source: "" },
+  { id: 161, content: "战争不决定谁对，只决定谁留", author: "罗素", source: "" },
+  { id: 162, content: "人生而自由，却在枷锁中", author: "卢梭", source: "" },
+  { id: 163, content: "成功在于不改变目标", author: "卢梭", source: "" },
+  { id: 164, content: "教育不是注满水，而是点火", author: "叶芝", source: "" },
+  { id: 165, content: "保持你的脸朝向阳光", author: "海伦·凯勒", source: "" },
+  { id: 166, content: "生活要么大胆尝试，要么一无所获", author: "海伦·凯勒", source: "" },
+  { id: 167, content: "走自己的路", author: "但丁", source: "" },
+  { id: 168, content: "意志坚强的人能揉捏世界", author: "歌德", source: "" },
+  { id: 169, content: "哪个有进取心的人不犯错误", author: "歌德", source: "" },
+  { id: 170, content: "生命是一盏灯，不是蜡烛", author: "萧伯纳", source: "" },
+  { id: 171, content: "人生有两出悲剧：一是万念俱灰，另一是踌躇满志", author: "萧伯纳", source: "" },
+  { id: 172, content: "如果冬天来了，春天还会远吗", author: "雪莱", source: "" },
+  { id: 173, content: "过去属于死神，未来属于你自己", author: "雪莱", source: "" },
+  { id: 174, content: "书籍是人类进步的阶梯", author: "高尔基", source: "" },
+  { id: 175, content: "人的天职在探索真理", author: "哥白尼", source: "" },
+  { id: 176, content: "接受失望，它是有限的", author: "马丁·路德·金", source: "" },
+  { id: 177, content: "政治是可能性的艺术", author: "俾斯麦", source: "" },
+  { id: 178, content: "战争太重要，不能交给将军", author: "克列孟梭", source: "" },
+  { id: 179, content: "最浪费不起的是时间", author: "丁肇中", source: "" },
+  { id: 180, content: "科学是系统化的知识", author: "斯宾塞", source: "" },
+  { id: 181, content: "海纳百川，有容乃大", author: "林则徐", source: "" },
+  { id: 182, content: "路遥知马力，日久见人心", author: "元杂剧作者", source: "" },
+  { id: 183, content: "桃李不言，下自成蹊", author: "司马迁", source: "" },
+  { id: 184, content: "千里之堤，溃于蚁穴", author: "韩非", source: "" },
+  { id: 185, content: "一年之计在于春", author: "无名氏", source: "" },
+  { id: 186, content: "当局者迷，旁观者清", author: "《新唐书》作者", source: "" },
+  { id: 187, content: "凡事预则立，不预则废", author: "《礼记》作者群", source: "" },
+  { id: 188, content: "书到用时方恨少", author: "陆游", source: "" },
+  { id: 189, content: "人生自古谁无死，留取丹心照汗青", author: "文天祥", source: "" },
+  { id: 190, content: "先天下之忧而忧", author: "范仲淹", source: "" },
+  { id: 191, content: "不识庐山真面目", author: "苏轼", source: "" },
+  { id: 192, content: "问渠那得清如许", author: "朱熹", source: "" },
+  { id: 193, content: "有志不在年高", author: "《传家宝》作者", source: "" },
+  { id: 194, content: "冰冻三尺，非一日之寒", author: "王充", source: "" },
+  { id: 195, content: "吃一堑，长一智", author: "无名氏", source: "" },
+  { id: 196, content: "尺有所短，寸有所长", author: "屈原", source: "" },
+  { id: 197, content: "初生牛犊不怕虎", author: "《庄子》作者群", source: "" },
+  { id: 198, content: "滴水之恩，涌泉相报", author: "《增广贤文》作者", source: "" },
+  { id: 199, content: "独木不成林", author: "崔骃", source: "" },
+  { id: 200, content: "机不可失，时不再来", author: "《旧五代史》作者", source: "" },
+  { id: 201, content: "近朱者赤，近墨者黑", author: "傅玄", source: "" },
+  { id: 202, content: "金玉其外，败絮其中", author: "刘基", source: "" },
+  { id: 203, content: "浪子回头金不换", author: "《八十一梦》作者", source: "" },
+  { id: 204, content: "满招损，谦受益", author: "《尚书》作者群", source: "" },
+  { id: 205, content: "皮之不存，毛将焉附", author: "《左传》作者", source: "" },
+  { id: 206, content: "千里送鹅毛，礼轻情意重", author: "《路史》作者", source: "" },
+  { id: 207, content: "前车之覆，后车之鉴", author: "《荀子》作者", source: "" },
+  { id: 208, content: "人非圣贤，孰能无过", author: "《左传》作者", source: "" },
+  { id: 209, content: "人固有一死，或重于泰山，或轻于鸿毛", author: "司马迁", source: "" },
+  { id: 210, content: "三个臭皮匠，赛过诸葛亮", author: "无名氏", source: "" },
+  { id: 211, content: "伟大始于渺小", author: "加缪", source: "" },
+  { id: 212, content: "哪里有压迫，哪里就有反抗", author: "马克思", source: "" },
+  { id: 213, content: "哲学家们只是用不同的方式解释世界", author: "马克思", source: "" },
+  { id: 214, content: "劳动创造世界", author: "马克思", source: "" },
+  { id: 215, content: "生命中最沉重的负担是无聊", author: "昆德拉", source: "" },
+  { id: 216, content: "坚持到最后最有力量", author: "丘吉尔", source: "" },
+  { id: 217, content: "悲观主义者在每个机会中看到困难", author: "丘吉尔", source: "" },
+  { id: 218, content: "成功就是从失败到失败，也依然热情不改", author: "丘吉尔", source: "" },
+  { id: 219, content: "我们将战斗到底", author: "丘吉尔", source: "" },
+  { id: 220, content: "生命在于运动", author: "伏尔泰", source: "" },
+  { id: 221, content: "我不同意你的观点，但我誓死捍卫你说话的权利", author: "伏尔泰", source: "" },
+  { id: 222, content: "最长的路也有尽头，最黑暗的夜晚也会迎接清晨", author: "斯托夫人", source: "" },
+  { id: 223, content: "你想成为什么样的人，你就是什么样的人", author: "爱默生", source: "" },
+  { id: 224, content: "我们最大的光荣不在于永不失败，而在于每次跌倒后都爬起来", author: "丘吉尔", source: "" },
+  { id: 225, content: "要成功，先发疯，头脑简单向前冲", author: "马云", source: "" },
+  { id: 226, content: "今天很残酷，明天更残酷，后天很美好", author: "马云", source: "" },
+  { id: 227, content: "创业要找最合适的人，不一定要找最成功的人", author: "马云", source: "" },
+  { id: 228, content: "如果你不放弃，就还有机会", author: "马云", source: "" },
+  { id: 229, content: "生活就像一盒巧克力，你永远不知道下一颗是什么味道", author: "福雷斯特·甘", source: "" },
+  { id: 230, content: "你的时间有限，所以不要为别人而活", author: "乔布斯", source: "" },
+  { id: 231, content: "设计不只是外表，而是功能", author: "乔布斯", source: "" },
+  { id: 232, content: "质量比数量重要", author: "乔布斯", source: "" },
+  { id: 233, content: "时间有限，别模仿他人", author: "乔布斯", source: "" },
+  { id: 234, content: "伟大的工作来自热爱", author: "乔布斯", source: "" },
+  { id: 235, content: "死亡是最好的发明", author: "乔布斯", source: "" },
+  { id: 236, content: "创新就是把各种事物整合到一起", author: "乔布斯", source: "" },
+  { id: 237, content: "我愿意用我所有的科技去换取和苏格拉底相处的一个下午", author: "乔布斯", source: "" },
+  { id: 238, content: "成为卓越的代名词，很多人并不能适合需要杰出素质的环境", author: "乔布斯", source: "" },
+  { id: 239, content: "佛教中有一句话：初学者的心态；拥有初学者的心态是件了不起的事情", author: "乔布斯", source: "" },
+  { id: 240, content: "并不是每个人都需要种植自己的粮食", author: "乔布斯", source: "" },
+  { id: 241, content: "学习知识要善于思考", author: "爱因斯坦", source: "" },
+  { id: 242, content: "科学研究好像钻木板", author: "爱因斯坦", source: "" },
+  { id: 243, content: "在所阅读的书本中找出可以把自己引到深处的东西", author: "爱因斯坦", source: "" },
+  { id: 244, content: "如果一个想法在一开始不是荒谬的，那它就是没有希望的", author: "爱因斯坦", source: "" },
+  { id: 245, content: "只有热爱才是最好的教师", author: "爱因斯坦", source: "" },
+  { id: 246, content: "追求客观真理和知识是人的最高和永恒的目标", author: "爱因斯坦", source: "" },
+  { id: 247, content: "提出一个问题往往比解决一个问题更重要", author: "爱因斯坦", source: "" },
+  { id: 248, content: "成功=艰苦劳动+正确方法+少说空话", author: "爱因斯坦", source: "" },
+  { id: 249, content: "一个人的真正价值首先决定于他在什么程度上和在什么意义上从自我解放出来", author: "爱因斯坦", source: "" },
+  { id: 250, content: "如果我们知道我们在做什么，那就不叫研究了，不是吗？", author: "爱因斯坦", source: "" },
+  { id: 251, content: "科学的灵感，决不是坐等可以等来的", author: "华罗庚", source: "" },
+  { id: 252, content: "新的数学方法和概念，常常比解决数学问题本身更重要", author: "华罗庚", source: "" },
+  { id: 253, content: "天才在于积累，聪明在于勤奋", author: "华罗庚", source: "" },
+  { id: 254, content: "勤能补拙是良训，一分辛劳一分才", author: "华罗庚", source: "" },
+  { id: 255, content: "时间是由分秒积成的，善于利用零星时间的人，才会做出更大的成绩来", author: "华罗庚", source: "" },
+  { id: 256, content: "人家帮我，永志不忘；我帮人家，莫记心上", author: "华罗庚", source: "" },
+  { id: 257, content: "科学是实事求是的学问，来不得半点虚假", author: "华罗庚", source: "" },
+  { id: 258, content: "在寻求真理的长河中，唯有学习，不断地学习", author: "华罗庚", source: "" },
+  { id: 259, content: "我们最好把自己的生命看作前人生命的延续", author: "华罗庚", source: "" },
+  { id: 260, content: "任何一个人，都要必须养成自学的习惯", author: "华罗庚", source: "" },
+  { id: 261, content: "真正的科学家应当是个幻想家", author: "巴尔扎克", source: "" },
+  { id: 262, content: "爱情是回忆的宝库", author: "巴尔扎克", source: "" },
+  { id: 263, content: "一个能思想的人，才真是一个力量无边的人", author: "巴尔扎克", source: "" },
+  { id: 264, content: "持续不断的劳动是人生的铁律", author: "巴尔扎克", source: "" },
+  { id: 265, content: "所谓天才，就是比任何人都先抵挡痛苦的经验本领", author: "巴尔扎克", source: "" },
+  { id: 266, content: "逆境，是天才的进身之阶", author: "巴尔扎克", source: "" },
+  { id: 267, content: "苦难是人生的老师", author: "巴尔扎克", source: "" },
+  { id: 268, content: "遵守诺言就象保卫你的荣誉一样", author: "巴尔扎克", source: "" },
+  { id: 269, content: "爱情是种宗教，信奉这个宗教比信奉旁的宗教代价高得多", author: "巴尔扎克", source: "" },
+  { id: 270, content: "人之相知，贵在知心", author: "李陵", source: "" },
+  { id: 271, content: "不降其志，不辱其身", author: "孔子", source: "" },
+  { id: 272, content: "老当益壮，宁移白首之心", author: "王勃", source: "" },
+  { id: 273, content: "穷且益坚，不坠青云之志", author: "王勃", source: "" },
+  { id: 274, content: "天下之事常成于困约，而败于奢靡", author: "陆游", source: "" },
+  { id: 275, content: "宝剑锋从磨砺出，梅花香自苦寒来", author: "陆游", source: "" },
+  { id: 276, content: "纸上得来终觉浅，绝知此事要躬行", author: "陆游", source: "" },
+  { id: 277, content: "古人学问无遗力，少壮工夫老始成", author: "陆游", source: "" },
+  { id: 278, content: "问渠那得清如许？为有源头活水来", author: "朱熹", source: "" },
+  { id: 279, content: "循序而渐进，熟读而精思", author: "朱熹", source: "" },
+  { id: 280, content: "读书有三到，谓心到，眼到，口到", author: "朱熹", source: "" },
+  { id: 281, content: "人学始知道，不学非自然", author: "韩愈", source: "" },
+  { id: 282, content: "业精于勤，荒于嬉；行成于思，毁于随", author: "韩愈", source: "" },
+  { id: 283, content: "书山有路勤为径，学海无涯苦作舟", author: "韩愈", source: "" },
+  { id: 284, content: "凡事预则立，不预则废", author: "礼记", source: "" },
+  { id: 285, content: "博学之，审问之，慎思之，明辨之，笃行之", author: "礼记", source: "" },
+  { id: 286, content: "玉不琢，不成器；人不学，不知道", author: "礼记", source: "" },
+  { id: 287, content: "锲而舍之，朽木不折；锲而不舍，金石可镂", author: "荀子", source: "" },
+  { id: 288, content: "君子博学而日参省乎己，则知明而行无过矣", author: "荀子", source: "" },
+  { id: 289, content: "不登高山，不知天之高也；不临深溪，不知地之厚也", author: "荀子", source: "" },
+  { id: 290, content: "水能载舟，亦能覆舟", author: "荀子", source: "" },
+  { id: 291, content: "知之者不如好之者，好之者不如乐之者", author: "孔子", source: "" },
+  { id: 292, content: "三人行，必有我师焉。择其善者而从之，其不善者而改之", author: "孔子", source: "" },
+  { id: 293, content: "学而时习之，不亦说乎？有朋自远方来，不亦乐乎", author: "孔子", source: "" },
+  { id: 294, content: "温故而知新，可以为师矣", author: "孔子", source: "" },
+  { id: 295, content: "知者不惑，仁者不忧，勇者不惧", author: "孔子", source: "" },
+  { id: 296, content: "君子成人之美，不成人之恶", author: "孔子", source: "" },
+  { id: 297, content: "己欲立而立人，己欲达而达人", author: "孔子", source: "" },
+  { id: 298, content: "工欲善其事，必先利其器", author: "孔子", source: "" },
+  { id: 299, content: "过而不改，是谓过矣", author: "孔子", source: "" },
+  { id: 300, content: "小不忍则乱大谋", author: "孔子", source: "" }
 ];
 
 export default quotes;
