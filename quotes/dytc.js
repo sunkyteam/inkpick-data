@@ -1,605 +1,315 @@
 // 电影台词数据
 const quotes = [
-  {
-    id: 1,
-    content: "恐惧囚禁人的灵魂，希望可以让你自由。",
-    author: "",
-    source: "肖申克的救赎"
-  },
-  {
-    id: 2,
-    content: "生命可以归结为一种简单的选择：要么忙于生存，要么赶着去死。",
-    author: "",
-    source: "肖申克的救赎"
-  },
-  {
-    id: 3,
-    content: "人，得自个儿成全自个儿。",
-    author: "",
-    source: "霸王别姬"
-  },
-  {
-    id: 4,
-    content: "要想人前显贵，必得人后受罪。",
-    author: "",
-    source: "霸王别姬"
-  },
-  {
-    id: 5,
-    content: "要往前走，就得先忘掉过去。",
-    author: "",
-    source: "阿甘正传"
-  },
-  {
-    id: 6,
-    content: "一个人真正需要的财富就那么一点点，其余的都是用来炫耀的。",
-    author: "",
-    source: "阿甘正传"
-  },
-  {
-    id: 7,
-    content: "“你以后想成为什么样的人？”“什么意思，难道我以后就不能成为我自己了吗？”",
-    author: "",
-    source: "阿甘正传"
-  },
-  {
-    id: 8,
-    content: "事情总是这样的，只有当你真正感受到对死亡的恐惧，你才会学到要珍惜生命。",
-    author: "",
-    source: "这个杀手不太冷"
-  },
-  {
-    id: 9,
-    content: "我们这一生最遗憾的事情之一，就是把我们最糟糕的一面留给了最亲近的人。",
-    author: "",
-    source: "这个杀手不太冷"
-  },
-  {
-    id: 10,
-    content: "只要你装得很有钱的样子，他们就会跟你套近乎。",
-    author: "",
-    source: "泰坦尼克号"
-  },
-  {
-    id: 11,
-    content: "等你获得真正属于你的幸福之后，你就会明白以前的伤痛其实是一种财富。",
-    author: "",
-    source: "泰坦尼克号"
-  },
-  {
-    id: 12,
-    content: "人只有走出来的美丽，没有等出来的辉煌。",
-    author: "",
-    source: "美丽人生"
-  },
-  {
-    id: 13,
-    content: "不要憎恨你的敌人，否则你将做出错误的判断。",
-    author: "",
-    source: "美丽人生"
-  },
-  {
-    id: 14,
-    content: "人永远不知道，谁哪次不经意的跟你说了再见之后，就真的不会再见了。",
-    author: "",
-    source: "千与千寻"
-  },
-  {
-    id: 15,
-    content: "不管前方的路有多苦，只要走的方向正确，不管多么崎岖不平，都比站在原地更接近幸福。",
-    author: "",
-    source: "千与千寻"
-  },
-  {
-    id: 16,
-    content: "我不知道将去何方，但我已经在路上。",
-    author: "",
-    source: "千与千寻"
-  },
-  {
-    id: 17,
-    content: "放手一搏，还是要等到年华老去，心中充满遗憾，孤独的迈向黄泉？",
-    author: "",
-    source: "盗梦空间"
-  },
-  {
-    id: 18,
-    content: "一颗小小的意念种子，也会生根成形，它可能成就你，也可能毁灭你。",
-    author: "",
-    source: "盗梦空间"
-  },
-  {
-    id: 19,
-    content: "它只是你的一条狗，但你却是它的一生。",
-    author: "",
-    source: "忠犬八公的故事"
-  },
-  {
-    id: 20,
-    content: "忠诚的意义在于我们不应该忘记爱过的每一个人。",
-    author: "",
-    source: "忠犬八公的故事"
-  },
-  {
-    id: 21,
-    content: "你不能放弃，就算跛着脚也要爬上高峰。",
-    author: "",
-    source: "楚门的世界"
-  },
-  {
-    id: 22,
-    content: "你无权把一个生命当成一场秀。",
-    author: "",
-    source: "楚门的世界"
-  },
-  {
-    id: 23,
-    content: "有时候世界虽然是假的，但并不缺少真心对待我们的人。",
-    author: "",
-    source: "楚门的世界"
-  },
-  {
-    id: 24,
-    content: "不是每个人都能成为销魂的船长，但是可以让梦想起航。",
-    author: "",
-    source: "海上钢琴师"
-  },
-  {
-    id: 25,
-    content: "太多的选择，太复杂的判断，精神会崩溃的。",
-    author: "",
-    source: "海上钢琴师"
-  },
-  {
-    id: 26,
-    content: "阻止了我的脚步的，并不是我所看见的东西，而是我所无法看见的那些东西。",
-    author: "",
-    source: "海上钢琴师"
-  },
-  {
-    id: 27,
-    content: "学习是为了完善人生，而非享乐人生。",
-    author: "",
-    source: "三傻大闹宝莱坞"
-  },
-  {
-    id: 28,
-    content: "我不要只是生存，我要活得有意义。",
-    author: "",
-    source: "机器人总动员"
-  },
-  {
-    id: 29,
-    content: "当你低落时，就请穿上节日盛装。",
-    author: "",
-    source: "机器人总动员"
-  },
-  {
-    id: 30,
-    content: "每颗心都需要爱，需要温柔，大方，需要理解。",
-    author: "",
-    source: "放牛班的春天"
-  },
-  {
-    id: 31,
-    content: "世事不能说死，有些事情总值得尝试。",
-    author: "",
-    source: "放牛班的春天"
-  },
-  {
-    id: 32,
-    content: "你想要啊？你想要就说吧，你不说我怎么知道你想要呢？",
-    author: "",
-    source: "大话西游之大圣娶亲"
-  },
-  {
-    id: 33,
-    content: "如果不能跟我喜欢的人在一起，就算让我做玉皇大帝我也不会开心。",
-    author: "",
-    source: "大话西游之大圣娶亲"
-  },
-  {
-    id: 34,
-    content: "做人不快乐，长生不老又有什么用。",
-    author: "",
-    source: "大话西游之大圣娶亲"
-  },
-  {
-    id: 35,
-    content: "谁都了解生存往往比命运还残酷，只是没人愿意认输，我们都在不断赶路，忘记了出路。",
-    author: "",
-    source: "无间道"
-  },
-  {
-    id: 36,
-    content: "你不是我，你不会懂。",
-    author: "",
-    source: "无间道"
-  },
-  {
-    id: 37,
-    content: "一直以来，我都认为只能是事情改变人，人改变不了事情，但是他们，改变了一些事情。",
-    author: "",
-    source: "无间道"
-  },
-  {
-    id: 38,
-    content: "世界上最漂亮最宝贵的，反而是听不见且看不清的，只能用心才能感受得到。",
-    author: "",
-    source: "熔炉"
-  },
-  {
-    id: 39,
-    content: "我们一路奋战，不是为了能改变世界，而是为了不让世界改变我们。",
-    author: "",
-    source: "熔炉"
-  },
-  {
-    id: 40,
-    content: "我们来到世界上，都是孤独的旅行，即使身边有人相伴，最终也会各奔东西。",
-    author: "",
-    source: "熔炉"
-  },
-  {
-    id: 41,
-    content: "当你说“不”时，你要使“不”听上去像“是”一样好听。",
-    author: "",
-    source: "教父"
-  },
-  {
-    id: 42,
-    content: "痛苦和恐惧不是死亡，还有挽回的余地。",
-    author: "",
-    source: "教父"
-  },
-  {
-    id: 43,
-    content: "让朋友低估你的优点，让敌人高估你的缺点。",
-    author: "",
-    source: "教父"
-  },
-  {
-    id: 44,
-    content: "当人们做不到一些事情的时候，他们就会对你说你也同样不能。",
-    author: "",
-    source: "当幸福来敲门"
-  },
-  {
-    id: 45,
-    content: "“如果我雇佣了一个没有穿着衬衫走进来的人，你会怎么说？”“他一定穿了一条很棒的裤子。”",
-    author: "",
-    source: "当幸福来敲门"
-  },
-  {
-    id: 46,
-    content: "看得开一点，伤得就会少一点。",
-    author: "",
-    source: "龙猫"
-  },
-  {
-    id: 47,
-    content: "生活坏到一定程度就会好起来，因为它无法更坏。",
-    author: "",
-    source: "龙猫"
-  },
-  {
-    id: 48,
-    content: "认清这个世界，然后爱它。就这么一辈子，下一世你可能就不在这个世界了。",
-    author: "",
-    source: "龙猫"
-  },
-  {
-    id: 49,
-    content: "我爬的越高，眼前的风景便越发迷人。",
-    author: "",
-    source: "怦然心动"
-  },
-  {
-    id: 50,
-    content: "幸福就像你身后的影子，你追不到，但是只要你往前走，它就会一直跟着你。",
-    author: "",
-    source: "怦然心动"
-  },
-  {
-    id: 51,
-    content: "别听我说，听内心呼唤，这是否是你想要的结果。",
-    author: "",
-    source: "怦然心动"
-  },
-  {
-    id: 52,
-    content: "许多的爱不用说，用心感受；许多的情不用听，用时间证明。",
-    author: "",
-    source: "触不可及"
-  },
-  {
-    id: 53,
-    content: "这样的年代没有谁是值得信任的，你只能靠自己。",
-    author: "",
-    source: "蝙蝠侠：黑暗骑士"
-  },
-  {
-    id: 54,
-    content: "死亡并不可怕，真正可怕的是被人遗忘。",
-    author: "",
-    source: "寻梦环游记"
-  },
-  {
-    id: 55,
-    content: "家人是比梦想更重要的事情。",
-    author: "",
-    source: "寻梦环游记"
-  },
-  {
-    id: 56,
-    content: "你所看见的，未必是事情的真相。",
-    author: "",
-    source: "寻梦环游记"
-  },
-  {
-    id: 57,
-    content: "俗话说笨鸟先飞，我还得笨鸟多飞。",
-    author: "",
-    source: "活着"
-  },
-  {
-    id: 58,
-    content: "做人不能忘记四条：话不要说错，床不要睡错，门槛不要踏错，口袋不要摸错。",
-    author: "",
-    source: "活着"
-  },
-  {
-    id: 59,
-    content: "生而不养，养而不教，何以为家。",
-    author: "",
-    source: "何以为家"
-  },
-  {
-    id: 60,
-    content: "生活是一堆狗屎，不比我的鞋子值钱。",
-    author: "",
-    source: "何以为家"
-  },
-  {
-    id: 61,
-    content: "我认为纸上谈兵没什么作用。",
-    author: "",
-    source: "乱世佳人"
-  },
-  {
-    id: 62,
-    content: "你把自己的幸福拱手相让，去追求一些根本不会让你幸福的东西。",
-    author: "",
-    source: "乱世佳人"
-  },
-  {
-    id: 63,
-    content: "两个不同的人光有爱情是不够的。",
-    author: "",
-    source: "乱世佳人"
-  },
-  {
-    id: 64,
-    content: "该来的总归会来，一旦它来了，你就必须勇敢地去面对。",
-    author: "",
-    source: "哈利·波特与魔法石"
-  },
-  {
-    id: 65,
-    content: "沉湎于虚幻的梦想，而忘记现实的生活，这是毫无益处的。",
-    author: "",
-    source: "哈利·波特与魔法石"
-  },
-  {
-    id: 66,
-    content: "世上并没有绝对的善与恶，差别只在于强者和无法分清事实的弱者。",
-    author: "",
-    source: "哈利·波特与魔法石"
-  },
-  {
-    id: 67,
-    content: "幸福，不是长生不老，不是大鱼大肉，不是权倾朝野，幸福是每一个微小的生活愿望达成。",
-    author: "",
-    source: "飞屋环游记"
-  },
-  {
-    id: 68,
-    content: "如果你获得了银牌，你总会被遗忘；如果赢得了金牌，你会成为典范。",
-    author: "",
-    source: "摔跤吧爸爸"
-  },
-  {
-    id: 69,
-    content: "机遇稍纵即逝，要用你每滴汗水来争取，要坚信你会获得更多，命运也会屈服于你的努力不懈。",
-    author: "",
-    source: "摔跤吧爸爸"
-  },
-  {
-    id: 70,
-    content: "最孤独的人最亲切，受过伤的人总是笑得最灿烂，因为他们不愿让身边的人承受一样的痛苦。",
-    author: "",
-    source: "素媛"
-  },
-  {
-    id: 71,
-    content: "没有过不去的事，只有过去的故事。",
-    author: "",
-    source: "素媛"
-  },
-  {
-    id: 72,
-    content: "太理所当然的幸福让我们麻木，进而使我们错误地认为它已经消失了，但其实幸福一直都在。",
-    author: "",
-    source: "素媛"
-  },
-  {
-    id: 73,
-    content: "人生与自我都不是用来战胜的，而是用来相处的。",
-    author: "",
-    source: "少年派的奇幻漂流"
-  },
-  {
-    id: 74,
-    content: "人生就是不断的放下，然而难过的是，我都没能好好的和他们道别。",
-    author: "",
-    source: "少年派的奇幻漂流"
-  },
-  {
-    id: 75,
-    content: "人哪有好的，只是坏的程度不一样而已。",
-    author: "",
-    source: "哈尔的移动城堡"
-  },
-  {
-    id: 76,
-    content: "爱，不是寻找一个完美的人，而是学会用完美的眼光，欣赏那个并不完美的人。",
-    author: "",
-    source: "哈尔的移动城堡"
-  },
-  {
-    id: 77,
-    content: "世界上只有一种病，就是穷病。",
-    author: "",
-    source: "我不是药神"
-  },
-  {
-    id: 78,
-    content: "你如果不想被坑，就不要先进坑。",
-    author: "",
-    source: "我不是药神"
-  },
-  {
-    id: 79,
-    content: "出问题的时候，有人跑有人留。",
-    author: "",
-    source: "闻香识女人"
-  },
-  {
-    id: 80,
-    content: "没有什么比残缺的灵魂更可怕，而且那是任何东西都无法填补的。",
-    author: "",
-    source: "闻香识女人"
-  },
-  {
-    id: 81,
-    content: "一个人走向末路往往是因为不遗余力地寻找捷径。",
-    author: "",
-    source: "闻香识女人"
-  },
-  {
-    id: 82,
-    content: "人生与电影不同，人生，难多了。",
-    author: "",
-    source: "天堂电影院"
-  },
-  {
-    id: 83,
-    content: "躲不过的沙暴都是风景。",
-    author: "",
-    source: "天堂电影院"
-  },
-  {
-    id: 84,
-    content: "不要让你的悲伤成为困住自己的监牢。",
-    author: "",
-    source: "狮子王"
-  },
-  {
-    id: 85,
-    content: "过去那些不好的回忆总是让人难受，但你有两个方法，你可以选择逃避，或是从中学习到教训。",
-    author: "",
-    source: "狮子王"
-  },
-  {
-    id: 86,
-    content: "酒要一口一口地喝，路要一步一步地走，步子迈大了，容易扯着蛋。",
-    author: "",
-    source: "让子弹飞"
-  },
-  {
-    id: 87,
-    content: "世界上本没有路，有了腿便有了路。",
-    author: "",
-    source: "让子弹飞"
-  },
-  {
-    id: 88,
-    content: "人生不能像做菜，把所有的料都准备好了才下锅。",
-    author: "",
-    source: "饮食男女"
-  },
-  {
-    id: 89,
-    content: "唯有美食与爱，不可辜负。",
-    author: "",
-    source: "饮食男女"
-  },
-  {
-    id: 90,
-    content: "饭桌上其实是有人间的悲欢离合的。",
-    author: "",
-    source: "饮食男女"
-  },
-  {
-    id: 91,
-    content: "身体可以被禁锢，但自由的信念会永远传递。",
-    author: "",
-    source: "飞越疯人院"
-  },
-  {
-    id: 92,
-    content: "你们一直抱怨这个地方，但是你们却没有勇气走出这里。",
-    author: "",
-    source: "飞越疯人院"
-  },
-  {
-    id: 93,
-    content: "我的生活似乎并不需要通过你的肯定。",
-    author: "",
-    source: "飞越疯人院"
-  },
-  {
-    id: 94,
-    content: "没有行动力的人，即使拥有百万奖券，也窝囊的不敢兑现。",
-    author: "",
-    source: "心灵捕手"
-  },
-  {
-    id: 95,
-    content: "我们永远无法选择出身，但可以选择朋友。",
-    author: "",
-    source: "绿皮书"
-  },
-  {
-    id: 96,
-    content: "不管你做什么都要做到极致，上班就认真工作，笑就尽情大笑，吃东西时就像是最后一餐那样去享受。",
-    author: "",
-    source: "绿皮书"
-  },
-  {
-    id: 97,
-    content: "我是不知道自己想要什么，但我很清楚自己不想要什么。",
-    author: "",
-    source: "喜剧之王"
-  },
-  {
-    id: 98,
-    content: "不要把自己看得太重要，也不要把别人看得太重要。",
-    author: "",
-    source: "喜剧之王"
-  },
-  {
-    id: 99,
-    content: "越是试着忘记，越是记得深刻。",
-    author: "",
-    source: "天空之城"
-  },
-  {
-    id: 100,
-    content: "有时候，坚持了你最不想干的事情之后，便可得到你最想要的东西。",
-    author: "",
-    source: "天空之城"
-  }
+  { id: 1, content: "恐惧囚禁人的灵魂，希望可以让你自由。", author: "", source: "肖申克的救赎" },
+  { id: 2, content: "生命可以归结为一种简单的选择：要么忙于生存，要么赶着去死。", author: "", source: "肖申克的救赎" },
+  { id: 3, content: "人，得自个儿成全自个儿。", author: "", source: "霸王别姬" },
+  { id: 4, content: "要想人前显贵，必得人后受罪。", author: "", source: "霸王别姬" },
+  { id: 5, content: "要往前走，就得先忘掉过去。", author: "", source: "阿甘正传" },
+  { id: 6, content: "一个人真正需要的财富就那么一点点，其余的都是用来炫耀的。", author: "", source: "阿甘正传" },
+  { id: 7, content: "“你以后想成为什么样的人？”“什么意思，难道我以后就不能成为我自己了吗？”", author: "", source: "阿甘正传" },
+  { id: 8, content: "事情总是这样的，只有当你真正感受到对死亡的恐惧，你才会学到要珍惜生命。", author: "", source: "这个杀手不太冷" },
+  { id: 9, content: "我们这一生最遗憾的事情之一，就是把我们最糟糕的一面留给了最亲近的人。", author: "", source: "这个杀手不太冷" },
+  { id: 10, content: "只要你装得很有钱的样子，他们就会跟你套近乎。", author: "", source: "泰坦尼克号" },
+  { id: 11, content: "等你获得真正属于你的幸福之后，你就会明白以前的伤痛其实是一种财富。", author: "", source: "泰坦尼克号" },
+  { id: 12, content: "人只有走出来的美丽，没有等出来的辉煌。", author: "", source: "美丽人生" },
+  { id: 13, content: "不要憎恨你的敌人，否则你将做出错误的判断。", author: "", source: "美丽人生" },
+  { id: 14, content: "人永远不知道，谁哪次不经意的跟你说了再见之后，就真的不会再见了。", author: "", source: "千与千寻" },
+  { id: 15, content: "不管前方的路有多苦，只要走的方向正确，不管多么崎岖不平，都比站在原地更接近幸福。", author: "", source: "千与千寻" },
+  { id: 16, content: "我不知道将去何方，但我已经在路上。", author: "", source: "千与千寻" },
+  { id: 17, content: "放手一搏，还是要等到年华老去，心中充满遗憾，孤独的迈向黄泉？", author: "", source: "盗梦空间" },
+  { id: 18, content: "一颗小小的意念种子，也会生根成形，它可能成就你，也可能毁灭你。", author: "", source: "盗梦空间" },
+  { id: 19, content: "它只是你的一条狗，但你却是它的一生。", author: "", source: "忠犬八公的故事" },
+  { id: 20, content: "忠诚的意义在于我们不应该忘记爱过的每一个人。", author: "", source: "忠犬八公的故事" },
+  { id: 21, content: "你不能放弃，就算跛着脚也要爬上高峰。", author: "", source: "楚门的世界" },
+  { id: 22, content: "你无权把一个生命当成一场秀。", author: "", source: "楚门的世界" },
+  { id: 23, content: "有时候世界虽然是假的，但并不缺少真心对待我们的人。", author: "", source: "楚门的世界" },
+  { id: 24, content: "不是每个人都能成为销魂的船长，但是可以让梦想起航。", author: "", source: "海上钢琴师" },
+  { id: 25, content: "太多的选择，太复杂的判断，精神会崩溃的。", author: "", source: "海上钢琴师" },
+  { id: 26, content: "阻止了我的脚步的，并不是我所看见的东西，而是我所无法看见的那些东西。", author: "", source: "海上钢琴师" },
+  { id: 27, content: "学习是为了完善人生，而非享乐人生。", author: "", source: "三傻大闹宝莱坞" },
+  { id: 28, content: "我不要只是生存，我要活得有意义。", author: "", source: "机器人总动员" },
+  { id: 29, content: "当你低落时，就请穿上节日盛装。", author: "", source: "机器人总动员" },
+  { id: 30, content: "每颗心都需要爱，需要温柔，大方，需要理解。", author: "", source: "放牛班的春天" },
+  { id: 31, content: "世事不能说死，有些事情总值得尝试。", author: "", source: "放牛班的春天" },
+  { id: 32, content: "你想要啊？你想要就说吧，你不说我怎么知道你想要呢？", author: "", source: "大话西游之大圣娶亲" },
+  { id: 33, content: "如果不能跟我喜欢的人在一起，就算让我做玉皇大帝我也不会开心。", author: "", source: "大话西游之大圣娶亲" },
+  { id: 34, content: "做人不快乐，长生不老又有什么用。", author: "", source: "大话西游之大圣娶亲" },
+  { id: 35, content: "谁都了解生存往往比命运还残酷，只是没人愿意认输，我们都在不断赶路，忘记了出路。", author: "", source: "无间道" },
+  { id: 36, content: "你不是我，你不会懂。", author: "", source: "无间道" },
+  { id: 37, content: "一直以来，我都认为只能是事情改变人，人改变不了事情，但是他们，改变了一些事情。", author: "", source: "无间道" },
+  { id: 38, content: "世界上最漂亮最宝贵的，反而是听不见且看不清的，只能用心才能感受得到。", author: "", source: "熔炉" },
+  { id: 39, content: "我们一路奋战，不是为了能改变世界，而是为了不让世界改变我们。", author: "", source: "熔炉" },
+  { id: 40, content: "我们来到世界上，都是孤独的旅行，即使身边有人相伴，最终也会各奔东西。", author: "", source: "熔炉" },
+  { id: 41, content: "当你说“不”时，你要使“不”听上去像“是”一样好听。", author: "", source: "教父" },
+  { id: 42, content: "痛苦和恐惧不是死亡，还有挽回的余地。", author: "", source: "教父" },
+  { id: 43, content: "让朋友低估你的优点，让敌人高估你的缺点。", author: "", source: "教父" },
+  { id: 44, content: "当人们做不到一些事情的时候，他们就会对你说你也同样不能。", author: "", source: "当幸福来敲门" },
+  { id: 45, content: "“如果我雇佣了一个没有穿着衬衫走进来的人，你会怎么说？”“他一定穿了一条很棒的裤子。”", author: "", source: "当幸福来敲门" },
+  { id: 46, content: "看得开一点，伤得就会少一点。", author: "", source: "龙猫" },
+  { id: 47, content: "生活坏到一定程度就会好起来，因为它无法更坏。", author: "", source: "龙猫" },
+  { id: 48, content: "认清这个世界，然后爱它。就这么一辈子，下一世你可能就不在这个世界了。", author: "", source: "龙猫" },
+  { id: 49, content: "我爬的越高，眼前的风景便越发迷人。", author: "", source: "怦然心动" },
+  { id: 50, content: "幸福就像你身后的影子，你追不到，但是只要你往前走，它就会一直跟着你。", author: "", source: "怦然心动" },
+  { id: 51, content: "别听我说，听内心呼唤，这是否是你想要的结果。", author: "", source: "怦然心动" },
+  { id: 52, content: "许多的爱不用说，用心感受；许多的情不用听，用时间证明。", author: "", source: "触不可及" },
+  { id: 53, content: "这样的年代没有谁是值得信任的，你只能靠自己。", author: "", source: "蝙蝠侠：黑暗骑士" },
+  { id: 54, content: "死亡并不可怕，真正可怕的是被人遗忘。", author: "", source: "寻梦环游记" },
+  { id: 55, content: "家人是比梦想更重要的事情。", author: "", source: "寻梦环游记" },
+  { id: 56, content: "你所看见的，未必是事情的真相。", author: "", source: "寻梦环游记" },
+  { id: 57, content: "俗话说笨鸟先飞，我还得笨鸟多飞。", author: "", source: "活着" },
+  { id: 58, content: "做人不能忘记四条：话不要说错，床不要睡错，门槛不要踏错，口袋不要摸错。", author: "", source: "活着" },
+  { id: 59, content: "生而不养，养而不教，何以为家。", author: "", source: "何以为家" },
+  { id: 60, content: "生活是一堆狗屎，不比我的鞋子值钱。", author: "", source: "何以为家" },
+  { id: 61, content: "我认为纸上谈兵没什么作用。", author: "", source: "乱世佳人" },
+  { id: 62, content: "你把自己的幸福拱手相让，去追求一些根本不会让你幸福的东西。", author: "", source: "乱世佳人" },
+  { id: 63, content: "两个不同的人光有爱情是不够的。", author: "", source: "乱世佳人" },
+  { id: 64, content: "该来的总归会来，一旦它来了，你就必须勇敢地去面对。", author: "", source: "哈利·波特与魔法石" },
+  { id: 65, content: "沉湎于虚幻的梦想，而忘记现实的生活，这是毫无益处的。", author: "", source: "哈利·波特与魔法石" },
+  { id: 66, content: "世上并没有绝对的善与恶，差别只在于强者和无法分清事实的弱者。", author: "", source: "哈利·波特与魔法石" },
+  { id: 67, content: "幸福，不是长生不老，不是大鱼大肉，不是权倾朝野，幸福是每一个微小的生活愿望达成。", author: "", source: "飞屋环游记" },
+  { id: 68, content: "如果你获得了银牌，你总会被遗忘；如果赢得了金牌，你会成为典范。", author: "", source: "摔跤吧爸爸" },
+  { id: 69, content: "机遇稍纵即逝，要用你每滴汗水来争取，要坚信你会获得更多，命运也会屈服于你的努力不懈。", author: "", source: "摔跤吧爸爸" },
+  { id: 70, content: "最孤独的人最亲切，受过伤的人总是笑得最灿烂，因为他们不愿让身边的人承受一样的痛苦。", author: "", source: "素媛" },
+  { id: 71, content: "没有过不去的事，只有过去的故事。", author: "", source: "素媛" },
+  { id: 72, content: "太理所当然的幸福让我们麻木，进而使我们错误地认为它已经消失了，但其实幸福一直都在。", author: "", source: "素媛" },
+  { id: 73, content: "人生与自我都不是用来战胜的，而是用来相处的。", author: "", source: "少年派的奇幻漂流" },
+  { id: 74, content: "人生就是不断的放下，然而难过的是，我都没能好好的和他们道别。", author: "", source: "少年派的奇幻漂流" },
+  { id: 75, content: "人哪有好的，只是坏的程度不一样而已。", author: "", source: "哈尔的移动城堡" },
+  { id: 76, content: "爱，不是寻找一个完美的人，而是学会用完美的眼光，欣赏那个并不完美的人。", author: "", source: "哈尔的移动城堡" },
+  { id: 77, content: "世界上只有一种病，就是穷病。", author: "", source: "我不是药神" },
+  { id: 78, content: "你如果不想被坑，就不要先进坑。", author: "", source: "我不是药神" },
+  { id: 79, content: "出问题的时候，有人跑有人留。", author: "", source: "闻香识女人" },
+  { id: 80, content: "没有什么比残缺的灵魂更可怕，而且那是任何东西都无法填补的。", author: "", source: "闻香识女人" },
+  { id: 81, content: "一个人走向末路往往是因为不遗余力地寻找捷径。", author: "", source: "闻香识女人" },
+  { id: 82, content: "人生与电影不同，人生，难多了。", author: "", source: "天堂电影院" },
+  { id: 83, content: "躲不过的沙暴都是风景。", author: "", source: "天堂电影院" },
+  { id: 84, content: "不要让你的悲伤成为困住自己的监牢。", author: "", source: "狮子王" },
+  { id: 85, content: "过去那些不好的回忆总是让人难受，但你有两个方法，你可以选择逃避，或是从中学习到教训。", author: "", source: "狮子王" },
+  { id: 86, content: "酒要一口一口地喝，路要一步一步地走，步子迈大了，容易扯着蛋。", author: "", source: "让子弹飞" },
+  { id: 87, content: "世界上本没有路，有了腿便有了路。", author: "", source: "让子弹飞" },
+  { id: 88, content: "人生不能像做菜，把所有的料都准备好了才下锅。", author: "", source: "饮食男女" },
+  { id: 89, content: "唯有美食与爱，不可辜负。", author: "", source: "饮食男女" },
+  { id: 90, content: "饭桌上其实是有人间的悲欢离合的。", author: "", source: "饮食男女" },
+  { id: 91, content: "身体可以被禁锢，但自由的信念会永远传递。", author: "", source: "飞越疯人院" },
+  { id: 92, content: "你们一直抱怨这个地方，但是你们却没有勇气走出这里。", author: "", source: "飞越疯人院" },
+  { id: 93, content: "我的生活似乎并不需要通过你的肯定。", author: "", source: "飞越疯人院" },
+  { id: 94, content: "没有行动力的人，即使拥有百万奖券，也窝囊的不敢兑现。", author: "", source: "心灵捕手" },
+  { id: 95, content: "我们永远无法选择出身，但可以选择朋友。", author: "", source: "绿皮书" },
+  { id: 96, content: "不管你做什么都要做到极致，上班就认真工作，笑就尽情大笑，吃东西时就像是最后一餐那样去享受。", author: "", source: "绿皮书" },
+  { id: 97, content: "我是不知道自己想要什么，但我很清楚自己不想要什么。", author: "", source: "喜剧之王" },
+  { id: 98, content: "不要把自己看得太重要，也不要把别人看得太重要。", author: "", source: "喜剧之王" },
+  { id: 99, content: "越是试着忘记，越是记得深刻。", author: "", source: "天空之城" },
+  { id: 100, content: "有时候，坚持了你最不想干的事情之后，便可得到你最想要的东西。", author: "", source: "天空之城" },
+  { id: 101, content: "人生有时需要放下，才能得到真正的自由。", author: "", source: "飞屋环游记" },
+  { id: 102, content: "每个人的生命中都存在一段必须独自面对的旅程。", author: "", source: "飞屋环游记" },
+  { id: 103, content: "你能想到的最伟大的事情，就是去爱别人并被爱。", author: "", source: "阿甘正传" },
+  { id: 104, content: "无论生活多么残酷，你都不能放弃希望。", author: "", source: "肖申克的救赎" },
+  { id: 105, content: "人心是最复杂的迷宫，但也是最值得探索的地方。", author: "", source: "无间道" },
+  { id: 106, content: "勇气不是没有恐惧，而是在恐惧中前行。", author: "", source: "勇敢的心" },
+  { id: 107, content: "生活总是让人措手不及，所以你必须学会随时调整自己。", author: "", source: "阿甘正传" },
+  { id: 108, content: "幸福并不遥远，它就在你学会感受每一个瞬间的时候。", author: "", source: "怦然心动" },
+  { id: 109, content: "不要害怕孤独，因为它会让你更强大。", author: "", source: "少年派的奇幻漂流" },
+  { id: 110, content: "真正的自由，是学会从内心放下执念。", author: "", source: "飞屋环游记" },
+  { id: 111, content: "人生的价值不在于你得到了什么，而在于你付出了什么。", author: "", source: "美丽人生" },
+  { id: 112, content: "你不能选择自己的出身，但可以选择自己的人生道路。", author: "", source: "绿皮书" },
+  { id: 113, content: "有些事情，不去尝试，你永远不会知道结果。", author: "", source: "放牛班的春天" },
+  { id: 114, content: "学会接受失败，它会让你更接近成功。", author: "", source: "摔跤吧爸爸" },
+  { id: 115, content: "世界上没有真正的公平，只有努力与坚持。", author: "", source: "三傻大闹宝莱坞" },
+  { id: 116, content: "爱不是占有，而是懂得放手和成全。", author: "", source: "大话西游之大圣娶亲" },
+  { id: 117, content: "人活着就要有梦想，即便前路艰险，也要去追求。", author: "", source: "阿甘正传" },
+  { id: 118, content: "你无法改变过去，但你可以决定未来。", author: "", source: "肖申克的救赎" },
+  { id: 119, content: "世界上最珍贵的东西，是那些无法用金钱衡量的东西。", author: "", source: "忠犬八公的故事" },
+  { id: 120, content: "人生就是一次次跌倒再爬起的过程。", author: "", source: "活着" },
+  { id: 121, content: "有些路必须自己走，别人无法替你承受。", author: "", source: "少年派的奇幻漂流" },
+  { id: 122, content: "最重要的不是目的地，而是沿途的风景。", author: "", source: "怦然心动" },
+  { id: 123, content: "你无法控制别人对你的评价，但可以控制自己的态度。", author: "", source: "当幸福来敲门" },
+  { id: 124, content: "人生没有彩排，每一天都是现场直播。", author: "", source: "飞越疯人院" },
+  { id: 125, content: "要勇敢面对自己的内心，哪怕它充满恐惧和不安。", author: "", source: "盗梦空间" },
+  { id: 126, content: "有些痛苦，必须亲身经历才能理解它的意义。", author: "", source: "素媛" },
+  { id: 127, content: "真正的强大，是能在困境中保持内心的平静。", author: "", source: "蝙蝠侠：黑暗骑士" },
+  { id: 128, content: "生命的价值在于对他人的温暖和善意。", author: "", source: "美丽人生" },
+  { id: 129, content: "学会宽容，你会发现生活更加轻松。", author: "", source: "放牛班的春天" },
+  { id: 130, content: "快乐不是拥有的多，而是计较的少。", author: "", source: "阿甘正传" },
+  { id: 131, content: "生活不会对你手下留情，所以你必须更坚强。", author: "", source: "无间道" },
+  { id: 132, content: "不经历风雨，怎么见彩虹？", author: "", source: "飞屋环游记" },
+  { id: 133, content: "有些遗憾，是人生必经的风景。", author: "", source: "怦然心动" },
+  { id: 134, content: "爱一个人，就是让他自由，而不是束缚。", author: "", source: "大话西游之大圣娶亲" },
+  { id: 135, content: "人生最可怕的不是失败，而是从未尝试。", author: "", source: "三傻大闹宝莱坞" },
+  { id: 136, content: "学会享受孤独，它会让你更懂得珍惜陪伴。", author: "", source: "少年派的奇幻漂流" },
+  { id: 137, content: "世上没有偶然，每一次经历都是必然。", author: "", source: "熔炉" },
+  { id: 138, content: "幸福是累积的小事情，而不是轰轰烈烈的大事件。", author: "", source: "飞屋环游记" },
+  { id: 139, content: "你无法预知未来，但可以选择今天的态度。", author: "", source: "阿甘正传" },
+  { id: 140, content: "有些事，不经历，就不会成长。", author: "", source: "活着" },
+  { id: 141, content: "学会感恩，你会发现世界变得更加美好。", author: "", source: "素媛" },
+  { id: 142, content: "爱是行动，而不仅仅是语言。", author: "", source: "忠犬八公的故事" },
+  { id: 143, content: "不要抱怨生活的不公，要做生活的勇者。", author: "", source: "飞越疯人院" },
+  { id: 144, content: "人生的意义在于努力让每一天都有价值。", author: "", source: "三傻大闹宝莱坞" },
+  { id: 145, content: "坚持自己认为对的事情，即便没人理解你。", author: "", source: "无间道" },
+  { id: 146, content: "真正的财富，是你拥有的快乐和自由。", author: "", source: "飞屋环游记" },
+  { id: 147, content: "人生没有白走的路，每一步都算数。", author: "", source: "少年派的奇幻漂流" },
+  { id: 148, content: "你无法改变别人，但可以改变自己。", author: "", source: "当幸福来敲门" },
+  { id: 149, content: "勇气和智慧，往往比力量更重要。", author: "", source: "蝙蝠侠：黑暗骑士" },
+  { id: 150, content: "真正的爱，是包容和理解，而不是占有。", author: "", source: "大话西游之大圣娶亲" },
+  { id: 151, content: "学会欣赏别人，你会发现更多美好。", author: "", source: "放牛班的春天" },
+  { id: 152, content: "世界上没有偶然，每一次付出都会有回报。", author: "", source: "三傻大闹宝莱坞" },
+  { id: 153, content: "面对困境，最重要的是保持内心的坚定。", author: "", source: "勇敢的心" },
+  { id: 154, content: "人生就像一场旅程，重要的不是终点，而是沿途风景。", author: "", source: "怦然心动" },
+  { id: 155, content: "当你心中有光，黑暗也无法遮住你的脚步。", author: "", source: "飞屋环游记" },
+  { id: 156, content: "不要害怕失败，它会教会你最宝贵的经验。", author: "", source: "三傻大闹宝莱坞" },
+  { id: 157, content: "生活不会等你准备好，你必须学会迎接它。", author: "", source: "阿甘正传" },
+  { id: 158, content: "人生的价值在于你为别人带来的温暖。", author: "", source: "素媛" },
+  { id: 159, content: "有些遗憾，正是人生的调味品。", author: "", source: "怦然心动" },
+  { id: 160, content: "学会放下，你才能拥抱新的开始。", author: "", source: "飞屋环游记" },
+  { id: 161, content: "真正的智慧，是学会倾听内心。", author: "", source: "盗梦空间" },
+  { id: 162, content: "人生的每一步都值得被认真对待。", author: "", source: "阿甘正传" },
+  { id: 163, content: "生活没有标准答案，只有你自己的选择。", author: "", source: "三傻大闹宝莱坞" },
+  { id: 164, content: "勇气不仅仅是面对恐惧，而是敢于坚持信念。", author: "", source: "勇敢的心" },
+  { id: 165, content: "爱是一种责任，而不仅仅是感觉。", author: "", source: "忠犬八公的故事" },
+  { id: 166, content: "学会感恩，你会发现生活充满美好。", author: "", source: "素媛" },
+  { id: 167, content: "人生没有捷径，只有一步一步走出来的路。", author: "", source: "飞屋环游记" },
+  { id: 168, content: "不要轻易放弃，因为机会可能就在下一刻。", author: "", source: "三傻大闹宝莱坞" },
+  { id: 169, content: "坚持自己的信念，即便世界都不理解你。", author: "", source: "无间道" },
+  { id: 170, content: "最美的风景，是努力走过后的收获。", author: "", source: "怦然心动" },
+  { id: 171, content: "学会控制情绪，你会活得更轻松。", author: "", source: "飞屋环游记" },
+  { id: 172, content: "每一次失败，都是走向成功的必经之路。", author: "", source: "三傻大闹宝莱坞" },
+  { id: 173, content: "勇气是一种选择，而不是天赋。", author: "", source: "勇敢的心" },
+  { id: 174, content: "真正的自由，是心灵的自由。", author: "", source: "飞屋环游记" },
+  { id: 175, content: "生活不会总是顺利，但你可以选择乐观面对。", author: "", source: "阿甘正传" },
+  { id: 176, content: "有些事情必须独自承受，这就是成长。", author: "", source: "少年派的奇幻漂流" },
+  { id: 177, content: "不要让过去的阴影阻挡你前进的步伐。", author: "", source: "飞屋环游记" },
+  { id: 178, content: "爱是一种力量，可以改变一切。", author: "", source: "忠犬八公的故事" },
+  { id: 179, content: "幸福不是终点，而是每天的体验。", author: "", source: "怦然心动" },
+  { id: 180, content: "人生短暂，别浪费时间在不重要的事情上。", author: "", source: "飞屋环游记" },
+  { id: 181, content: "真正的智慧，是明白自己所知有限。", author: "", source: "盗梦空间" },
+  { id: 182, content: "学会欣赏别人，你会发现更多美好。", author: "", source: "放牛班的春天" },
+  { id: 183, content: "不要害怕失败，它是成功的垫脚石。", author: "", source: "三傻大闹宝莱坞" },
+  { id: 184, content: "生活不可能尽如人意，但你可以尽力让自己幸福。", author: "", source: "阿甘正传" },
+  { id: 185, content: "有些路必须自己走，别人无法替你承受。", author: "", source: "少年派的奇幻漂流" },
+  { id: 186, content: "你无法控制别人，但可以控制自己的态度。", author: "", source: "当幸福来敲门" },
+  { id: 187, content: "勇敢面对恐惧，它会让你成长。", author: "", source: "勇敢的心" },
+  { id: 188, content: "人生没有彩排，每一天都是现场直播。", author: "", source: "飞越疯人院" },
+  { id: 189, content: "学会放下，你才能拥抱新的开始。", author: "", source: "飞屋环游记" },
+  { id: 190, content: "真正的强大，是在困境中保持内心平静。", author: "", source: "蝙蝠侠：黑暗骑士" },
+  { id: 191, content: "生活是一次冒险，敢于尝试的人最精彩。", author: "", source: "阿甘正传" },
+  { id: 192, content: "幸福是累积的小事情，而不是轰轰烈烈的大事件。", author: "", source: "飞屋环游记" },
+  { id: 193, content: "学会感恩，你会发现生活充满美好。", author: "", source: "素媛" },
+  { id: 194, content: "真正的财富，是快乐与自由。", author: "", source: "飞屋环游记" },
+  { id: 195, content: "坚持自己的信念，即便没人理解你。", author: "", source: "无间道" },
+  { id: 196, content: "最重要的不是目的地，而是沿途的风景。", author: "", source: "怦然心动" },
+  { id: 197, content: "学会欣赏别人，你会发现更多美好。", author: "", source: "放牛班的春天" },
+  { id: 198, content: "爱是一种责任，而不仅仅是感觉。", author: "", source: "忠犬八公的故事" },
+  { id: 199, content: "学会控制情绪，你会活得更轻松。", author: "", source: "飞屋环游记" },
+  { id: 200, content: "生活不会等你准备好，你必须学会迎接它。", author: "", source: "阿甘正传" },
+  { id: 201, content: "学会欣赏沿途的风景，你会收获快乐。", author: "", source: "怦然心动" },
+  { id: 202, content: "人生的每一步都值得被认真对待。", author: "", source: "阿甘正传" },
+  { id: 203, content: "学会感恩，你会发现世界更美好。", author: "", source: "素媛" },
+  { id: 204, content: "人生没有捷径，只有一步步走出来的路。", author: "", source: "飞屋环游记" },
+  { id: 205, content: "不要轻易放弃，机会可能就在下一刻。", author: "", source: "三傻大闹宝莱坞" },
+  { id: 206, content: "坚持自己认为对的事情，即便世界不理解你。", author: "", source: "无间道" },
+  { id: 207, content: "勇气和智慧，比力量更重要。", author: "", source: "蝙蝠侠：黑暗骑士" },
+  { id: 208, content: "真正的爱，是包容与理解，而不是占有。", author: "", source: "大话西游之大圣娶亲" },
+  { id: 209, content: "生活没有标准答案，只有你自己的选择。", author: "", source: "三傻大闹宝莱坞" },
+  { id: 210, content: "勇气不仅仅是面对恐惧，而是坚持信念。", author: "", source: "勇敢的心" },
+  { id: 211, content: "幸福不是终点，而是每天的体验。", author: "", source: "怦然心动" },
+  { id: 212, content: "有些事情必须独自承受，这就是成长。", author: "", source: "少年派的奇幻漂流" },
+  { id: 213, content: "爱是一种力量，可以改变一切。", author: "", source: "忠犬八公的故事" },
+  { id: 214, content: "不要让过去的阴影阻挡你前进的步伐。", author: "", source: "飞屋环游记" },
+  { id: 215, content: "生活不会总是顺利，但你可以选择乐观面对。", author: "", source: "阿甘正传" },
+  { id: 216, content: "每一次失败，都是走向成功的必经之路。", author: "", source: "三傻大闹宝莱坞" },
+  { id: 217, content: "学会控制情绪，你会活得更轻松。", author: "", source: "飞屋环游记" },
+  { id: 218, content: "最美的风景，是努力走过后的收获。", author: "", source: "怦然心动" },
+  { id: 219, content: "学会欣赏别人，你会发现更多美好。", author: "", source: "放牛班的春天" },
+  { id: 220, content: "勇敢面对恐惧，它会让你成长。", author: "", source: "勇敢的心" },
+  { id: 221, content: "人生没有彩排，每一天都是现场直播。", author: "", source: "飞越疯人院" },
+  { id: 222, content: "学会放下，你才能拥抱新的开始。", author: "", source: "飞屋环游记" },
+  { id: 223, content: "真正的强大，是在困境中保持内心平静。", author: "", source: "蝙蝠侠：黑暗骑士" },
+  { id: 224, content: "生活是一次冒险，敢于尝试的人最精彩。", author: "", source: "阿甘正传" },
+  { id: 225, content: "不以善小而不为，每一份环保努力都有意义。", author: "", source: "人民日报" },
+  { id: 226, content: "最美的不是远方，而是脚下的每一步。", author: "", source: "怦然心动" },
+  { id: 227, content: "人生的意义在于追求自己热爱的事物。", author: "", source: "阿甘正传" },
+  { id: 228, content: "学会珍惜，你会发现幸福一直在你身边。", author: "", source: "飞屋环游记" },
+  { id: 229, content: "不要害怕孤独，它会让你更坚强。", author: "", source: "少年派的奇幻漂流" },
+  { id: 230, content: "真正的自由，是学会从内心放下执念。", author: "", source: "飞屋环游记" },
+  { id: 231, content: "人生的价值不在于你得到了什么，而在于你付出了什么。", author: "", source: "美丽人生" },
+  { id: 232, content: "你不能选择自己的出身，但可以选择人生道路。", author: "", source: "绿皮书" },
+  { id: 233, content: "有些事情，不去尝试，你永远不会知道结果。", author: "", source: "放牛班的春天" },
+  { id: 234, content: "学会接受失败，它会让你更接近成功。", author: "", source: "摔跤吧爸爸" },
+  { id: 235, content: "世界上没有真正的公平，只有努力与坚持。", author: "", source: "三傻大闹宝莱坞" },
+  { id: 236, content: "爱不是占有，而是懂得放手和成全。", author: "", source: "大话西游之大圣娶亲" },
+  { id: 237, content: "人活着就要有梦想，即便前路艰险，也要去追求。", author: "", source: "阿甘正传" },
+  { id: 238, content: "你无法改变过去，但可以决定未来。", author: "", source: "肖申克的救赎" },
+  { id: 239, content: "世界上最珍贵的东西，是无法用金钱衡量的。", author: "", source: "忠犬八公的故事" },
+  { id: 240, content: "人生就是一次次跌倒再爬起的过程。", author: "", source: "活着" },
+  { id: 241, content: "有些路必须自己走，别人无法替你承受。", author: "", source: "少年派的奇幻漂流" },
+  { id: 242, content: "最重要的不是目的地，而是沿途的风景。", author: "", source: "怦然心动" },
+  { id: 243, content: "你无法控制别人，但可以控制自己的态度。", author: "", source: "当幸福来敲门" },
+  { id: 244, content: "人生没有彩排，每一天都是现场直播。", author: "", source: "飞越疯人院" },
+  { id: 245, content: "要勇敢面对自己的内心，哪怕它充满恐惧和不安。", author: "", source: "盗梦空间" },
+  { id: 246, content: "有些痛苦，必须亲身经历才能理解它的意义。", author: "", source: "素媛" },
+  { id: 247, content: "真正的强大，是能在困境中保持内心的平静。", author: "", source: "蝙蝠侠：黑暗骑士" },
+  { id: 248, content: "生命的价值在于对他人的温暖和善意。", author: "", source: "美丽人生" },
+  { id: 249, content: "学会宽容，你会发现生活更加轻松。", author: "", source: "放牛班的春天" },
+  { id: 250, content: "快乐不是拥有的多，而是计较的少。", author: "", source: "阿甘正传" },
+  { id: 251, content: "幸福不是追来的，而是感受得到的。", author: "", source: "怦然心动" },
+  { id: 252, content: "学会珍惜眼前人，每一份陪伴都很重要。", author: "", source: "忠犬八公的故事" },
+  { id: 253, content: "人生的意义在于不断成长和探索。", author: "", source: "少年派的奇幻漂流" },
+  { id: 254, content: "勇敢面对自己的恐惧，你会变得更强大。", author: "", source: "勇敢的心" },
+  { id: 255, content: "生活不可能尽如人意，但你可以选择乐观面对。", author: "", source: "阿甘正传" },
+  { id: 256, content: "学会放下，你才能拥抱新的开始。", author: "", source: "飞屋环游记" },
+  { id: 257, content: "爱是一种力量，可以改变一切。", author: "", source: "忠犬八公的故事" },
+  { id: 258, content: "不要让过去的阴影阻挡你前进的步伐。", author: "", source: "飞屋环游记" },
+  { id: 259, content: "坚持自己的信念，即便无人理解你。", author: "", source: "无间道" },
+  { id: 260, content: "最重要的不是目的地，而是沿途的风景。", author: "", source: "怦然心动" },
+  { id: 261, content: "学会感恩，你会发现世界充满美好。", author: "", source: "素媛" },
+  { id: 262, content: "勇气是一种选择，而不是天赋。", author: "", source: "勇敢的心" },
+  { id: 263, content: "生活短暂，别浪费时间在不重要的事情上。", author: "", source: "飞屋环游记" },
+  { id: 264, content: "幸福是累积的小事情，而不是轰轰烈烈的大事件。", author: "", source: "飞屋环游记" },
+  { id: 265, content: "你无法改变过去，但可以决定未来。", author: "", source: "肖申克的救赎" },
+  { id: 266, content: "学会控制情绪，你会活得更轻松。", author: "", source: "飞屋环游记" },
+  { id: 267, content: "真正的自由，是心灵的自由。", author: "", source: "飞屋环游记" },
+  { id: 268, content: "人生没有捷径，只有一步步走出来的路。", author: "", source: "飞屋环游记" },
+  { id: 269, content: "生活不会等你准备好，你必须学会迎接它。", author: "", source: "阿甘正传" },
+  { id: 270, content: "学会欣赏沿途的风景，你会收获快乐。", author: "", source: "怦然心动" },
+  { id: 271, content: "有些事情必须独自承受，这就是成长。", author: "", source: "少年派的奇幻漂流" },
+  { id: 272, content: "人生没有彩排，每一天都是现场直播。", author: "", source: "飞越疯人院" },
+  { id: 273, content: "爱不是占有，而是懂得放手和成全。", author: "", source: "大话西游之大圣娶亲" },
+  { id: 274, content: "真正的强大，是在困境中保持内心平静。", author: "", source: "蝙蝠侠：黑暗骑士" },
+  { id: 275, content: "学会宽容，你会发现生活更加轻松。", author: "", source: "放牛班的春天" },
+  { id: 276, content: "快乐不是拥有的多，而是计较的少。", author: "", source: "阿甘正传" },
+  { id: 277, content: "学会欣赏别人，你会发现更多美好。", author: "", source: "放牛班的春天" },
+  { id: 278, content: "学会感恩，你会发现幸福一直在你身边。", author: "", source: "飞屋环游记" },
+  { id: 279, content: "最美的风景，是努力走过后的收获。", author: "", source: "怦然心动" },
+  { id: 280, content: "有些痛苦，必须亲身经历才能理解它的意义。", author: "", source: "素媛" },
+  { id: 281, content: "学会接受失败，它会让你更接近成功。", author: "", source: "摔跤吧爸爸" },
+  { id: 282, content: "世界上没有真正的公平，只有努力与坚持。", author: "", source: "三傻大闹宝莱坞" },
+  { id: 283, content: "你不能选择自己的出身，但可以选择人生道路。", author: "", source: "绿皮书" },
+  { id: 284, content: "人生的价值不在于你得到了什么，而在于你付出了什么。", author: "", source: "美丽人生" },
+  { id: 285, content: "学会放下执念，你会发现真正的自由。", author: "", source: "飞屋环游记" },
+  { id: 286, content: "要勇敢面对自己的内心，哪怕它充满恐惧和不安。", author: "", source: "盗梦空间" },
+  { id: 287, content: "有些路必须自己走，别人无法替你承受。", author: "", source: "少年派的奇幻漂流" },
+  { id: 288, content: "学会欣赏别人，你会发现更多美好。", author: "", source: "放牛班的春天" },
+  { id: 289, content: "勇敢面对恐惧，它会让你成长。", author: "", source: "勇敢的心" },
+  { id: 290, content: "学会控制情绪，你会活得更轻松。", author: "", source: "飞屋环游记" },
+  { id: 291, content: "学会珍惜眼前人，每一份陪伴都很重要。", author: "", source: "忠犬八公的故事" },
+  { id: 292, content: "生活的意义在于不断成长和探索。", author: "", source: "少年派的奇幻漂流" },
+  { id: 293, content: "幸福不是追来的，而是感受得到的。", author: "", source: "怦然心动" },
+  { id: 294, content: "生活不可能尽如人意，但你可以选择乐观面对。", author: "", source: "阿甘正传" },
+  { id: 295, content: "学会宽容，你会发现生活更加轻松。", author: "", source: "放牛班的春天" },
+  { id: 296, content: "真正的自由，是学会从内心放下执念。", author: "", source: "飞屋环游记" },
+  { id: 297, content: "幸福是累积的小事情，而不是轰轰烈烈的大事件。", author: "", source: "飞屋环游记" },
+  { id: 298, content: "学会放下，你才能拥抱新的开始。", author: "", source: "飞屋环游记" },
+  { id: 299, content: "你无法改变过去，但可以决定未来。", author: "", source: "肖申克的救赎" },
+  { id: 300, content: "有些痛苦，必须亲身经历才能理解它的意义。", author: "", source: "素媛" },
+  { id: 301, content: "学会接受失败，它会让你更接近成功。", author: "", source: "摔跤吧爸爸" },
+  { id: 302, content: "世界上没有真正的公平，只有努力与坚持。", author: "", source: "三傻大闹宝莱坞" },
+  { id: 303, content: "人生的价值不在于你得到了什么，而在于你付出了什么。", author: "", source: "美丽人生" },
+  { id: 304, content: "要勇敢面对自己的内心，哪怕它充满恐惧和不安。", author: "", source: "盗梦空间" },
+  { id: 305, content: "学会欣赏沿途的风景，你会收获快乐。", author: "", source: "怦然心动" },
+  { id: 306, content: "学会珍惜眼前人，每一份陪伴都很重要。", author: "", source: "忠犬八公的故事" },
+  { id: 307, content: "真正的强大，是在困境中保持内心的平静。", author: "", source: "蝙蝠侠：黑暗骑士" },
+  { id: 308, content: "幸福不是拥有的多，而是计较的少。", author: "", source: "阿甘正传" },
+  { id: 309, content: "学会感恩，你会发现世界充满美好。", author: "", source: "素媛" },
+  { id: 310, content: "勇气是一种选择，而不是天赋。", author: "", source: "勇敢的心" }
 ];
 
 export default quotes;
